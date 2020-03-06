@@ -16,7 +16,7 @@ nav{
 button{
     box-shadow: 1px 2px 3px -1px black;
     background-color:transparent;
-    background-color: #fce9db17;
+    background-color: #b7bbc705;
     border-radius:28px;
     border: 0;
 	display:inline-block;
@@ -31,7 +31,7 @@ button{
 
 .myButton:hover {
     background-color:transparent;
-    background-color: #00b7b3;
+    background-color: rgb(0,183,179);
     color: white;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -67,6 +67,7 @@ ul{
 h2{
     font-size: 421%;
     padding-bottom: 5%;
+    padding-top: 3%;
     color: white;
 }
 
@@ -79,9 +80,10 @@ p{
 }
 
 .breaker{
-    height: 50vh;
-    background-color: #dfe0e5;
+    height: 15vh;
+    background-color: #242626;
     ;
+    
 }
 
 .text{
@@ -89,3 +91,112 @@ p{
     height: 75vh;
     padding-top: 3%;
 }
+
+#services{
+    height: 200vh;
+    background-color: #242626;
+}
+
+.container{
+    text-align: center;
+    color: white;
+}
+
+.col1{
+    width: 50%;
+    float: left;
+    height: 89vh;
+
+}
+
+.col2{
+    width: 48%;
+    margin-top: 1.5%;
+    margin-right: 2%;
+    float: right;
+    height: 89vh;
+    background-color: #ffffff08;
+    border-radius: 10% 50% 10% 50%;
+    height: 59vh;
+    box-shadow: 0px 0px 80px 20px black;
+
+}
+
+.col3{
+
+    width: 48%;
+    margin-top: 1.5%;
+    margin-left: 1.3%;
+    float: left;
+    height: 89vh;
+    background-color: #ffffff08;
+    border-radius: 10% 50% 10% 50%;
+    height: 59vh;
+    box-shadow: 0px 0px 80px 20px black;
+    clear: left;
+}
+
+.col4{
+    
+    width: 50%;
+    float: right;
+    height: 89vh;
+    margin-right: 0.5%;
+
+}
+
+.coltext{
+    padding-top: 12%;
+}
+
+
+img{
+    width: 93%;
+    display: inline-block;
+    border: 3px inset black;
+    box-shadow: 0px 0px 80px 20px black;
+    border-radius: 50% 10% 50% 10%;
+}
+
+.mySlides .mySlides2 {
+  display: none;
+}
+
+.nextprev{
+    position: relative;
+    padding-left: 8%;
+    padding-bottom: 1%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 128%;
+    transition: 0.6s ease;
+    user-select: none;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.prev:hover, .next:hover {
+  color: #00b7b3;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
