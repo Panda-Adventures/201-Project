@@ -1,4 +1,5 @@
 header{
+    overflow-x: hidden;
     background-image: url(../img/header5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,14 +27,16 @@ button{
 	font-size:19px;
 	font-weight:bold;
 	padding:14px 34px;
-	text-decoration:none;
+    text-decoration:none;
+    transition: all 0.8s ease;
+
 }
 
 .myButton:hover {
     background-color:transparent;
     background-color: rgb(0,183,179);
     color: white;
-    transition: all 0.3s ease-in-out 0s;
+    transform: scale(1.1);
 }
 .myButton:active {
 	position:relative;
@@ -50,6 +53,7 @@ ul{
     margin-left: 68%;
     padding-top: 2%;
 }
+
 
 #aboutus{
     height: 80vh;
@@ -156,6 +160,13 @@ img{
     border: 3px inset black;
     box-shadow: 0px 0px 80px 20px black;
     border-radius: 50% 10% 50% 10%;
+    transition: 0.5s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
 }
 
 .mySlides .mySlides2 {
@@ -200,3 +211,424 @@ img{
   to {opacity: 1}
 }
 
+#hikealong{
+    background: teal;
+    background: url(../img/header2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.route{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: 'image' 'text' 'stats';
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    border-radius: 18px;
+    background: #ffffffeb;
+    box-shadow: 5px 5px 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 100px;
+}
+
+.route-text p, .route-text h2{
+    color: black;
+    font-size: small;
+}
+
+.route-image{
+    grid-area: image;
+    background: url(../img/best2.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.route-text{
+    grid-area: text;
+    margin: 8.5%;
+}
+
+.route-text .period{
+    color: rgb(255,7,110);
+    font-size: 13px;
+}
+
+.route-text p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.route-text h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+
+.route-stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(255,7,110);
+}
+
+.route-stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.route-stats .type{
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.route-stats .value{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.route-stats .border{
+    border-left: 1px solid rgb(172,26,87);
+    border-right: 1px solid rgb(172,26,87);
+}
+
+.route-stats .value sup{
+    font-size: 12px;
+}
+
+.route:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+h3{
+    width: 30%;
+    font-size: xx-large;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+span{
+    color: #00b7b3;
+    font-weight: bold;
+}
+
+h4{
+    width: 20%;
+    font-size: large;
+    color: #00b7b3;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+.fadetext{
+    opacity: 0;
+    animation: fadetext 26s linear infinite;
+    animation-delay: 2s;
+}
+
+.fadeqoute{
+    opacity: 0;
+    animation: fadetext 26s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadetext{
+    0%{
+        opacity: 0;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 3%;
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 6%;
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 9%;
+    }
+    100%{
+        opacity: 0;
+        padding-left: 11%;
+    }
+}
+
+
+.fadetext2{
+    opacity: 0;
+    animation: fadetext2 26s linear infinite;
+    animation-delay: 8s;
+    padding-left: 70%;
+    width: 33%;
+}
+
+.fadeqoute2{
+    opacity: 0;
+    animation: fadeqoute2 26s linear infinite;
+    animation-delay: 8.5s;
+    padding-left: 70%;
+}
+
+@keyframes fadetext2{
+    0%{
+        opacity: 0;
+        padding-left: 55%;
+        padding-top: 11%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 60%;
+        padding-top: 11%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 65%;
+        padding-top: 11%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 70%;
+        padding-top: 11%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 75%;
+        padding-top: 11%;
+    }
+}
+@keyframes fadeqoute2{
+    0%{
+        opacity: 0;
+        padding-left: 55%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 60%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 65%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 70%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 75%;
+        padding-top: 1%;
+    }
+}
+
+.fadetext3{
+    opacity: 0;
+    animation: fadetext3 26s linear infinite;
+    animation-delay: 14s;
+    padding-left: 4%;
+    width: 33%;
+}
+
+.fadeqoute3{
+    opacity: 0;
+    animation: fadeqoute3 26s linear infinite;
+    animation-delay: 14.5s;
+    padding-left: 4%;
+}
+
+@keyframes fadetext3{
+    0%{
+        opacity: 0;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 6%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 8%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+    }
+}
+@keyframes fadeqoute3{
+    0%{
+        opacity: 0;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 6%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 8%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+    }
+}
+
+.fadetext4{
+    opacity: 0;
+    animation: fadetext4 26s linear infinite;
+    animation-delay: 20s;
+    padding-left: 47%;
+    width: 33%;
+}
+
+.fadeqoute4{
+    opacity: 0;
+    animation: fadeqoute4 26s linear infinite;
+    animation-delay: 20.5s;
+    padding-left: 49%;
+}
+
+@keyframes fadetext4{
+    0%{
+        opacity: 0;
+        padding-left: 47%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 53%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 59%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 65%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 65%;
+        padding-top: 1%;
+    }
+}
+@keyframes fadeqoute4{
+    0%{
+        opacity: 0;
+        padding-left: 48%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 54%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 60%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 66%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 66%;
+        padding-top: 1%;
+    }
+}
