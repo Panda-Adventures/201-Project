@@ -1,0 +1,97 @@
+select {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: wheat;
+  }
+  #locationform{
+    width: 90%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color:#242626;
+    opacity: 0.7;
+    color: wheat;
+    align-items: center;
+    
+  }
+  
+  #TimeofTrip{
+    width: 39%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: wheat;
+  }
+  #section-left {
+    float: left;
+    width: 40%;
+  }
+  
+  #section-right {
+    float: left;
+    width: 55%;
+    opacity: 0.9;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color:#242626;
+    color: wheat;
+    align-items: center;
+    
+  }
+  .submitButton{
+    width: 20%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: wheat;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  }
+  .submitButton:hover{
+    width: 20%;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color:#d0b080;
+    color: white;
+  }
+  .formField {
+    width: 39%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: wheat;
+  }
+  
+  #LocationName{
+    width: 100%;
+    padding: 5px 10px;
+    border: non;
+    border-radius: 6px;
+    background-color: wheat;
+  }
+  
+  #GradeofTrip{
+    width: 39%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color:wheat;
+  }
+  
+  body{
+  background:url(https://user-images.githubusercontent.com/34350992/41576489-b69b0348-7355-11e8-9c65-ea7fe45afc68.jpg) ;
+  width:100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  
+  
+  }
+  
