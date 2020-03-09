@@ -46,11 +46,11 @@ function save_locations() {//this function creat the location and save them in l
   new TimeTrip('RIFT VALLEY MOUNTAIN TREK:', 'Wadi Al Nakheel Trail', 'Moderate', 'More Than One Day', '(Year-round, except during Ramadan)', 'guided only', '18 km', ' 7 - 8 hrs', '6:30 a.m.', '10-20 people', 'This trail offers an aquatic hike through small pools of water,especially refreshing during spring time. With different stone formations, this trail is reminiscent of the famous Siq of Petra “Petra canyon”. After 3 - 4 hours, you will take a relaxing tea break,whilst learning more about the spectacular surroundings from your local guide. Upon reaching the green valleys of Albustaan, you will meet your Bedouin hosts and sleep in a Bedouin tent.', 'transportation included from 7 circle to RIFT VALLEY MOUNTAIN','Breakfast:falafel,hummas,tomato,potato,fruits,vegetables','uniform and guiding tools' );
   new TimeTrip('RIFT VALLEY MOUNTAIN TREK:', 'Al Matal Trail', 'Easy', 'More Than One Day', '(Year-round, except during Ramadan)', 'guided only', '14 km', ' 5 - 6 hrs', '6:30 a.m.', '10-20 people', 'This easier hike starts from the old village of Sihan, which was inhabited by Shobaki locals up until the nineteenth century. Only ruins of the old stone houses now stand witness to a once lively community in Sihan. A high viewpoint is easily reached, rewarding you with magnificent views of Shobak’s proposed protected area. Following the Al Hazeem road you reach the Ras Al Faid area, where you spend your last night in Shobak before heading towards little Petra.', 'transportation included from 7 circle to RIFT VALLEY MOUNTAIN', 'Breakfast:falafel,hummas,tomato,potato,fruits,vegetables','uniform and guiding tools');
   var productstring = JSON.stringify(newlocation);//to transfer the object to json formate (string)
-  localStorage.setItem('locations', productstring);
+  localStorage.setItem('chooseLocations', productstring);
 }
 
 function load_locations() {//to search that locations are stored in the storage, if not, call save function to generate and save locations
-  var productstring = localStorage.getItem('locations');
+  var productstring = localStorage.getItem('chooseLocations');
   if (productstring) {
     newlocation = JSON.parse(productstring);
   }
