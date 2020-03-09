@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Hiking in Jordan</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+
+
+
+</head>
+
+<body>
+
+  <div>
+    <section id="section-left">
+      <form id="locationform">
+        <fieldset>
+          <h1> Find your Trip:</h1>
+          <!-- <label for="first name">First name</label>
+      <input type="text"id="First name" class="formField" placeholder="Enter First name">
+      <br><br>
+     
+      <label for="Last name">Last name</label>
+      <input type="text"id="Last name" class="formField" placeholder="Enter Last name"><br><br>
+      <label for=" Your Age">Your Age</label>
+      <input type="text"id="Your Age" class="formField" placeholder="Enter Your Age">
+     -->
+     
+
+          <h3>The Time of Trip</h3>
+          <label for="Time of Trip">Time of Trip</label>
+          <select id="TimeofTrip" name="Time of Trip" class="formField">
+            <option value="any">Any</option>
+            <option value="up to 2 hours">up to 2 hours</option>
+            <option value="up to 3-4 hours">up to 3-4 hours</option>
+            <option value="up to 6 hours">up to 6 hours</option>
+            <option value="Full Day">Full Day</option>
+            <option value="More Than One Day">More Than One Day</option>
+          </select><br><br>
+
+
+          <h3>The Grade of Trip</h3>
+          <label for="Grade of Trip">Grade of Trip</label>
+          <select id="GradeofTrip" name="Grad of Trip">
+            <option value="any">Any</option>
+            <option value="Difficult">Difficult</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Easy">Easy</option><br><br>
+          </select><br><br>
+
+
+
+          <label for="Location Name">Location Name</label>
+          <select id="LocationName" name="Location Name">
+            <option value="NA">No Available Places </option>
+
+          </select>
+          <br><br>
+          <div id="route_div"> 
+          <label for="route">Route</label>
+          <select id="route" name="route">
+            <option value="NA">No Available Places </option>
+
+          </select>
+        </div>
+          <br><br>
+
+
+          <button type="button" class="submitButton" id="moreInfo">More!</button>
+
+      </form>
+      </fieldset>
+      </form>
+    </section>
+    <section id="section-right">
+      <div id="info"></div>
+
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
