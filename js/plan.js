@@ -198,6 +198,8 @@ formValues.addEventListener('submit', function (event) {
 
     var planTripString = JSON.stringify(planLocations);
     localStorage.setItem('planTrip', planTripString);
+
+    renderPlan();
 });
 
 
@@ -211,34 +213,39 @@ function PlanTrip(locationName, period, route, transportation, food, foodtype, e
     this.foodtype = foodtype;
     this.equipment = equipment;
     this.equipmenttype = equipmenttype;
-    this.distance;
-    this.discription;
+    for (var i = 0; i < newlocation.length; i++) {
+        if (this.route === newlocation[i].routes) {
 
+            this.distance = newlocation[i].distance;
+            this.discription = newlocation[i].discription;
+            this.size = newlocation[i].size;
+            this.grade = newlocation[i].grade;
+
+        }
+    }
     planLocations.push(this);
-    canvas = document.getElementById('render');
-    var h2El = document.createElement('h2')
-    h2El.textContent = `Your ${this.locationName} trip details:`;
-    canvas.appendChild(h2El);
-    console.log(this);
-    return this;
 }
+
 
 function loadPlanTrip() {//to search that locations are stored in the storage, if not, call save function to generate and save locations 
     var planTripString = localStorage.getItem('planTrip');
-    if (planTripString) {
         planLocations = JSON.parse(planTripString);
-    }
 }
-// loadPlanTrip();
+
+if (planLocations != [] && planLocations){
+loadPlanTrip();
+}
+
+
 
 var canvas
-function renderPlan(){
+function renderPlan() {
     // for (var i = 0; i < planLocations.length; i++){
     canvas = document.getElementById('render');
     var h2El = document.createElement('h2')
-    h2El.textContent = `Your ${PlanTrip.locationName} trip details:`;
+    h2El.textContent = `Your ${planLocations[0].locationName} trip details:`;
     canvas.appendChild(h2El);
 
 
-// }
+    // }
 }
