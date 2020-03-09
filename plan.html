@@ -33,7 +33,7 @@
                 </select>
 
                 <label for="route">Choose a route:</label>
-                <select name="route" id="route" form="destinationForm">
+                <select name="routes" id="routes" form="destinationForm">
                     <option value="Select an option">Select an option</option>
                 </select>
 
@@ -70,15 +70,75 @@
 
                 <input type="submit" onclick="reset()">
 
-
-
             </fieldset>
         </form>
 
         <section id="render"></section>
+
+        <div>
+            <section id="section-left">
+              <form id="locationform">
+                <fieldset>
+                  <h1> Find your Trip:</h1>
+           
+                  <h3>The Time of Trip</h3>
+                  <label for="Time of Trip">Time of Trip</label>
+                  <select id="TimeofTrip" name="Time of Trip" class="formField">
+                    <option value="any">Any</option>
+                    <option value="up to 2 hours">up to 2 hours</option>
+                    <option value="up to 3-4 hours">up to 3-4 hours</option>
+                    <option value="up to 6 hours">up to 6 hours</option>
+                    <option value="Full Day">Full Day</option>
+                    <option value="More Than One Day">More Than One Day</option>
+                  </select><br><br>
+        
+        
+                  <h3>The Grade of Trip</h3>
+                  <label for="Grade of Trip">Grade of Trip</label>
+                  <select id="GradeofTrip" name="Grad of Trip">
+                    <option value="any">Any</option>
+                    <option value="Difficult">Difficult</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Easy">Easy</option><br><br>
+                  </select><br><br>
+        
+        
+        
+                  <label for="Location Name">Location Name</label>
+                  <select id="LocationName" name="Location Name">
+                    <option value="NA">No Available Places </option>
+        
+                  </select>
+                  <br><br>
+                  <div id="route_div">
+                    <label for="route">Route</label>
+                    <select id="route" name="route">
+                      <option value="NA">No Available Places </option>
+        
+                    </select>
+                  </div>
+                  <br><br>
+        
+        
+                  <button type="button" class="submitButton" id="moreInfo">More!</button>
+        
+              </form>
+              </fieldset>
+              </form>
+            </section>
+        
+        
+            <section id="section-right">
+              <div id="info"></div>
+        
+            </section>
+          </div>
+
     </main>
 
     <script src="js/plan.js"></script>
+    <script src="sahar/app.js"></script>
+
 </body>
 
 </html>
