@@ -65,7 +65,7 @@ load_locations();
 function initiateList(){ // //Add all locations to the select options once the page is loaded
   var container = document.getElementById('LocationName');// locationName that in the form to creat all options
   if(container !== null){//If the select is not on page (in case javascript is shared between pages)
-    if(newlocation.length !== 0 ){
+    if(newlocation.length != 0 ){
       container.removeChild( container.options[0] );// remove the defult (no avaliable place)
     }
 
@@ -105,7 +105,7 @@ TripTime.addEventListener('change', function() { // modify the select options de
     container.appendChild(opt);
     for(var i = 0; i < newlocation.length; i++){ // iterate over all locations
       // check if the filters match the location, and display it
-      if((TripTime.value === 'any' || TripTime.value === newlocation[i].period) && (TripDif.value === 'any' || TripDif.value === newlocation[i].Grade)){
+      if((TripTime.value == 'any' || TripTime.value == newlocation[i].period) && (TripDif.value == 'any' || TripDif.value == newlocation[i].Grade)){
         if(taken.includes(newlocation[i].LocationName))continue;
         taken.push(newlocation[i].LocationName);
         var opt = document.createElement('option');
@@ -115,7 +115,7 @@ TripTime.addEventListener('change', function() { // modify the select options de
       }
 
     }
-    if(container.options.length === 1){ // if the select is empty, add default
+    if(container.options.length == 1){ // if the select is empty, add default
       container.innerHTML = '';
       var opt = document.createElement('option');
       opt.appendChild( document.createTextNode('No Available Places') );
@@ -138,7 +138,7 @@ TripDif.addEventListener('change', function() {
     container.appendChild(opt);
     for(var i = 0; i < newlocation.length; i++){ // iterate over all locations
       // check if the filters match the location, and display it
-      if((TripTime.value === 'any' || TripTime.value == newlocation[i].period) && (TripDif.value === 'any' || TripDif.value === newlocation[i].Grade)){
+      if((TripTime.value == 'any' || TripTime.value == newlocation[i].period) && (TripDif.value == 'any' || TripDif.value == newlocation[i].Grade)){
         if(taken.includes(newlocation[i].LocationName))continue;
         taken.push(newlocation[i].LocationName);
         var opt = document.createElement('option');
@@ -148,7 +148,7 @@ TripDif.addEventListener('change', function() {
       }
 
     }
-    if(container.options.length === 1){ // if the select is empty, add default
+    if(container.options.length == 1){ // if the select is empty, add default
       container.innerHTML = '';
       var opt = document.createElement('option');
       opt.appendChild( document.createTextNode('No Available Places') );
@@ -172,7 +172,7 @@ container2.addEventListener('change', function() {
     container3.appendChild(opt);
 
     for(var i = 0; i < newlocation.length; i++){
-      if((TripTime.value === 'any' || TripTime.value === newlocation[i].period) && (TripDif.value === 'any' || TripDif.value === newlocation[i].Grade) && container2.value === newlocation[i].LocationName){
+      if((TripTime.value == 'any' || TripTime.value == newlocation[i].period) && (TripDif.value == 'any' || TripDif.value == newlocation[i].Grade) && container2.value === newlocation[i].LocationName){
         var opt = document.createElement('option');
         opt.appendChild( document.createTextNode(newlocation[i].route) );
         opt.value = newlocation[i].route;
@@ -180,7 +180,7 @@ container2.addEventListener('change', function() {
       }
 
     }
-    if(container3.options.length === 1){
+    if(container3.options.length == 1){
       container3.innerHTML = '';
       var opt = document.createElement('option');
       opt.appendChild( document.createTextNode('No Available Places') );
@@ -202,11 +202,11 @@ moreInfo.addEventListener('click', function () { // when button is clicked, add 
   if (container !== null) {
     var info = document.getElementById('info');
     info.innerHTML = '';
-    if (container.value !== 'NA' && container_route.value !== 'NA') {
+    if (container.value != 'NA' && container_route.value != 'NA') {
       for (var i = 0; i < newlocation.length; i++) {
-        if (container.value === newlocation[i].LocationName && container_route.value === newlocation[i].route) {
+        if (container.value == newlocation[i].LocationName && container_route.value == newlocation[i].route) {
 
-          var name = document.createElement('h1');
+          var name = document.createElement('h2');
           name.appendChild(document.createTextNode(newlocation[i].LocationName+' '+ newlocation[i].route));
           info.appendChild(name);
 
@@ -270,7 +270,7 @@ moreInfo.addEventListener('click', function () { // when button is clicked, add 
     }
     else {
       var info = document.getElementById('info');
-      var name = document.createElement('h1');
+      var name = document.createElement('h2');
       name.appendChild(document.createTextNode('Please select a valid location.'));
       info.appendChild(name);
     }
@@ -281,3 +281,24 @@ moreInfo.addEventListener('click', function () { // when button is clicked, add 
 });
 
 
+
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, '<span class=\'letter\'>$&</span>');
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: 'easeInOutQuad',
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: 'easeOutExpo',
+    delay: 1000
+  });
