@@ -1,5 +1,13 @@
 'use strict'
 
+document.getElementById('pop-btn').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "flex";
+});
+
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "none";
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -51,3 +59,8 @@ function showSlides2(m) {
   }
   slides2[slideIndex2 - 1].style.display = "block";
 }
+
+
+
+
+
