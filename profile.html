@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SaharStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+<input id="btnCreatePlane" onclick="toogleCreateForm()" class="myButton" type="button" value="Create Plane">
+<input id="btnChoosePlane" onclick="toogleChooseForm()" class="myButton" type="button" value="Choose Plane">
+<div style="float: right;">
+    <input id="btnCreatePlane" onclick="toogleCreateForm()" class="myButton" type="button" value="Create Plane">
+    <input id="btnChoosePlane" onclick="toogleChooseForm()" class="myButton" type="button" value="Choose Plane">
+</div>
+
+   <div id="mainDiv">
+
+      
+<div id="DivCreatPlane"  class="Hidden">
+<section class="section-left">
+<form id="createPlan" >
+            <fieldset>
+                <label for="destination">Choose your destination:</label>
+                <select name="destination" id="destination" form="destinationForm">
+                    <option value="Select an option">Select an option</option>
+                    <option value="Dana Hiking Trails">Dana Hiking Trails</option>
+                    <option value="Azraq Hiking Trail">Azraq Hiking Trail</option>
+                    <option value="Ajloun Hiking Trails">Ajloun Hiking Trails</option>
+                    <option value="Mujib Hiking Trails">Mujib Hiking Trails</option>
+                    <option value="Rift Valley Mountain">Rift Valley Mountain</option>
+                </select>
+
+                <label for="period">Choose period:</label>
+                <select name="period" id="period" form="destinationForm">
+                    <option value="Up to 2 hours">2 hours</option>
+                    <option value="3 - 4 hours">3 - 4 hours</option>
+                    <option value="Up to 6 hours">6 hours</option>
+                    <option value="Full day">Full day</option>
+                    <option value="More than one day">More than one day</option>
+                </select>
+
+                <label for="route">Choose route:</label>
+                <select name="route" id="route" form="destinationForm">
+                    <option value="NA">No routes available</option>
+                </select>
+
+                <label for="transportation">Include transportation:</label>
+                <select name="transportation" id="transportation" form="destinationForm">
+                    <option value="No">No</option>
+                    <option value="yes">yes</option>
+                </select>
+
+                <label for="food">Include food:</label>
+                <select name="food" id="food" form="destinationForm">
+                    <option value="No">No</option>
+                    <option value="yes">yes</option>
+                </select>
+
+                <label for="foodtype">Type of Food:</label>
+                <select name="foodtype" id="foodtype" form="destinationForm">
+                    <option value="NA">NA</option>
+                </select>
+
+
+
+            </fieldset>
+        </form>
+    </section>
+    <section >
+
+    </section>
+</div>
+
+        <div class="Hidden" id="ChooseForm">
+            <section class="section-left">
+              <form id="locationform">
+                <fieldset>
+                  <h1> Find your Trip:</h1>
+        
+        
+                  <h3>The Time of Trip</h3>
+                  <label for="Time of Trip">Time of Trip</label>
+                  <select id="TimeofTrip" name="Time of Trip" class="formField">
+                    <option value="any">Any</option>
+                    <option value="up to 2 hours">up to 2 hours</option>
+                    <option value="up to 3-4 hours">up to 3-4 hours</option>
+                    <option value="up to 6 hours">up to 6 hours</option>
+                    <option value="Full Day">Full Day</option>
+                    <option value="More Than One Day">More Than One Day</option>
+                  </select><br><br>
+        
+        
+                  <h3>The Grade of Trip</h3>
+                  <label for="Grade of Trip">Grade of Trip</label>
+                  <select id="GradeofTrip" name="Grad of Trip">
+                    <option value="any">Any</option>
+                    <option value="Difficult">Difficult</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Easy">Easy</option><br><br>
+                  </select><br><br>
+        
+        
+        
+                  <label for="Location Name">Location Name</label>
+                  <select id="LocationName" name="Location Name">
+                    <option value="NA">No Available Places </option>
+        
+                  </select>
+                  <br><br>
+        
+        
+        
+        
+        
+                  <button type="button" class="submitButton" id="moreInfo">More!</button>
+        
+              </form>
+              </fieldset>
+              </form>
+            </section>
+            <section id="section-right">
+              <div id="info"></div>
+        
+            </section>
+          </div>
+
+
+          
+
+        </div>
+
+    </main>
+    <script src="/js/profile.js"></script>
+    <script src="/sahar.js"></script>
+    <script src="js/plan.js"></script>
+</body>
+
+</html>
