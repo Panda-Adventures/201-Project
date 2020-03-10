@@ -803,12 +803,15 @@ transition: 0.2s;
 
 
 .mylogo img{
-    
+    border: none;
+    box-shadow: none;
     position: absolute;
     right: 103%;
     top: 84%;
 }
 .mylogo1 img{
+    border: none;
+    box-shadow: none;
    
     position: absolute;
     right: 103%;
@@ -860,6 +863,7 @@ background-color: white;
 }
 .myImages img{
     position: absolute;
+    border: none;
     box-shadow: none;
     border-radius: none;
     width: 400px;
@@ -967,9 +971,10 @@ background-color: white;
 
 .myImages1 img{
     position: absolute;
-    
-    width: 450px;
- top: 40%;
+    border: none;
+    box-shadow: none;
+    width: 500px;
+ top: 30%;
   margin-left: -10px;
     z-index: 999;
 }
