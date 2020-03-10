@@ -700,7 +700,7 @@ transition: 0.2s;
 
 
 
-.bg-modal {
+/* .bg-modal {
 	background-color: rgba(0, 0, 0, 0.0);
 	width: 100%;
     height: 700px;
@@ -873,8 +873,7 @@ background-color: white;
     top: 1%;
     left: 60%;
     margin: 10% auto 0;
-    
-    /*transform: translate(-50% ,-50%);*/
+ 
 }
 
 .input-box:active{
@@ -899,8 +898,307 @@ background-color: white;
 
        
         
+} */
+/*pop section */
+
+/*pop section */
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.0);
+	width: 100%;
+    height: 700px;
+	position: absolute;
+    top: 0%;
+    z-index: 9999;
+	display: none;
+	justify-content: center;
+	align-items: center;
 }
-/*pop section */
 
-/*pop section */
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
 
+/* input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+} */
+
+
+/* .bg-modal1{
+    
+  width: 100%;
+    height: 1000px;
+    background-color: blueviolet;
+   
+} */
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;}
+	.close:hover {
+		color: #666;
+	}
+    .postion1{
+        border-radius: 100px;
+        width: 1000px;
+        height: 700px;
+       
+    background-color: white;
+    
+        position: absolute;
+        top: 1%;
+        left: 17%;
+        
+        border-radius: 1px;
+        
+       overflow: hidden;
+     
+    
+    }
+   
+
+.myImages1 img{
+    position: absolute;
+    
+    width: 450px;
+ top: 40%;
+  margin-left: -10px;
+    z-index: 999;
+}
+
+
+#wave1{
+    background: url("https://cdn.pixabay.com/photo/2014/04/02/16/20/wave-306988_640.png");
+        width: 800px;
+        height: 1000px;
+    background-size: 1000px;
+        background-repeat: no-repeat;
+        filter: hue-rotate(.8);
+        margin-top:224px;
+        margin-left: -388px;
+        transform: rotate(-2deg);
+        z-index: -999;
+        
+
+       
+        
+}
+/*
+.pag1e2{
+    width: 200px;
+    height: 300px;
+    background-color: teal;
+}*/
+/* end css position---------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------
+---------------------------------------------------------*/
+
+
+.passw1{
+    margin-left: -170px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+
+p span input {
+    cursor: pointer;
+}
+.selectdate{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    margin: 2px;
+}
+
+ .input11{
+    cursor: pointer;
+    margin-top: 20ox;
+    
+}
+.input21{
+    cursor: pointer;
+    margin-top: 20ox;
+}
+
+.input31{
+
+    cursor: pointer;
+    margin-top: 20ox;
+}
+
+.gender1{
+    margin-left: -40px;
+}
+
+
+.sign-in1 {
+    width: 490px;
+   
+   
+    padding:20px;
+   opacity: .9;
+    text-align: center;
+   
+    margin: 9% auto 0;
+    z-index: 999;
+    position: absolute;
+    top: -15%;
+    left: 40%;
+    
+   
+}
+/*.hiNew{
+color: black;
+font-weight: 800;
+width: 500px;
+height: 200px;
+background-color: rgb(223, 231, 238);
+position: absolute;
+top: 1%;
+border-radius: 30px;
+opacity: .6;
+left: 63%;
+}
+*/
+.sign-in1 h2{
+
+    font-family: 'Anton', sans-serif;
+
+
+    color:black;
+    float: left;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+   font-size: 50px;
+    border-bottom: 6px solid #07BCBC;
+    margin-bottom:20px;
+    margin-left: 100px;
+    margin-top: -10px;
+    padding: 10px 0;
+
+
+}
+
+.findMore1{
+    font-size: 14px;
+    word-spacing: 2px;
+    
+}
+.findMore1 a{
+    color: blue;
+    font-weight: 800;
+    text-decoration: underline;
+   
+}
+
+.input-box1{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px  0;
+    width: 90%;
+    outline: none;
+    border: 1px snow #999;
+    margin-bottom: 10px;
+    
+
+}
+
+.postion1 button{
+    color: #fff;
+border-radius: 20px;
+padding: 10px;
+max-width: 10px 0;
+width: 60%;
+outline: none;
+border: 1px solid;
+font-size: 15px;
+cursor: pointer;
+
+
+}
+
+
+
+.signUp-btn1{
+    background-color: #07BCBC;
+
+
+}
+.signUp-btn1:hover{
+    border: none;
+    box-shadow: 0px 0px 18px  rgb(27, 179, 179) ;
+}
+
+.signface-btn1{
+    background-color:rgb(32, 143, 143);
+    
+}
+.signface-btn1:hover{
+    box-shadow: 0px 0px 18px #07BCBC;
+    
+}
+
+
+ a{
+    text-decoration: none;
+    font: outline;
+    font-style: bold;
+    color: white;
+    
+}
+.sign-in1 p a{
+    text-decoration: underline;
+}
+
+/*unviseted-link*/
+.sign-in1 p a:link{
+color: rgb(58, 9, 41);
+}
+/*viseted-link*/
+.sign-in1 p a:visited{
+    color: rgb(54, 9, 54);
+}
+/*mouse over link*/
+.sign-in1 p a:hover{
+    color: rgb(204, 9, 9);
+    
+}
+/*click the link*/
+.sign-in1 p a:active{
+    color: rgb(11, 116, 28);
+}
+hr{
+margin-top: 20px;
+width: 80%;
+
+}
+.or1{
+    margin: -19px auto 10px;
+    width: 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.field{
+    width: 300px;
+   margin-left: 90px;
+    border-radius: 30px;
+    background-color: white;
+    
+}
