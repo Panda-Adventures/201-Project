@@ -153,7 +153,7 @@ p{
     padding-top: 12%;
 }
 
-
+/* 
 img{
     width: 93%;
     display: inline-block;
@@ -167,7 +167,7 @@ img:hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
     cursor: pointer;
-}
+} */
 
 .mySlides .mySlides2 {
   display: none;
@@ -958,8 +958,8 @@ background-color: white;
     background-color: white;
     
         position: absolute;
-        top: 1%;
-        left: 17%;
+        top: 20%;
+        /* left: 17%; */
         
         border-radius: 1px;
         
@@ -1042,6 +1042,7 @@ background-color: white;
 
 .sign-in1 {
     width: 490px;
+    width: 49%;
    height: 1000px;
    
     padding:20px;

@@ -246,7 +246,7 @@ h2:nth-child(2){
 
 #section-left{
     background-color: rgba(255, 241, 241, 0.15);
-    height: 45vh;
+    height: 50vh;
     margin-top: 5%;
     display: none;
     box-shadow: 1px 1px 11px #61091e;
@@ -304,7 +304,7 @@ h2:nth-child(2){
 }
 
 #section-left .form-style-5{
-    margin-top: -3.5%;
+    margin-top: -1.5%;
 
 }
 
