@@ -13,7 +13,24 @@ body{
 
 
 }
+.total2{
+
+    background-image: url(/img/999.jpeg);
+    height: 250vh;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    opacity:0.9;
+  
+  
+  }
 h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 600%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+h5{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 600%;
     text-align: center;
@@ -24,12 +41,35 @@ h4{
 height: 70vh;
 
 }
+.uniform{
+
+    height: 70vh;
+}
 .img1{
     position: relative;
 /* opacity: 0.3; */
 height: 100%;
 width: 30%;
 float: left;
+
+}
+.img11{
+   
+        position: relative;
+    /* opacity: 0.3; */
+    height:50%;
+    width: 30%;
+    float: left;
+    
+}
+.titleuniform{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    font-weight: 100;
+    font-family: 'Lobster', cursive;
 
 }
 .titlebreakfast{
@@ -43,6 +83,20 @@ float: left;
 
 }
 
+.disuniform{
+    float: right;
+    width: 65%;
+    font-size: 250%;
+    position: relative;
+    padding-top: 3%;
+    margin-top: 10%;
+    background-color: white;
+    opacity: 0.6;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-family: 'Caveat', cursive;
+    /* display: none; */
+}
 .disbreakfast{
     float: right;
     width: 65%;
@@ -56,20 +110,44 @@ float: left;
     padding-left: 5%;
     font-family: 'Caveat', cursive;
     /* display: none; */
-    
-    
+    }
+    .guidingtools{
+
+        clear: left;
+        height: 70vh;
     }
     .summer{
         clear: left;
         height: 70vh;
     }
+    .img22{
+        position: relative;
+        opacity: 0.3;
+        height: 100%;
+        width: 30%;
+        float: right;
+        margin: -2.5%;
+    }
+       
     .img2{
         position: relative;
         opacity: 0.3;
         height: 100%;
         width: 30%;
         float: right;
+        margin: -2.5%;
+
         
+    }
+    .titleguidingtools{
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 45px;
+        font-weight: 100;
+        font-family: 'Lobster', cursive;
+    
     }
     .titlesummer{
         position: absolute;
@@ -80,6 +158,21 @@ float: left;
         font-weight: 100;
         font-family: 'Lobster', cursive;
     
+    }
+    .disguidingtools{
+        float: left;
+        width: 65%;
+        font-size: 250%;
+        position: relative;
+        padding-top: 3%;
+        margin-top: 10%;
+        background-color: white;
+        opacity: 0.6;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        font-family: 'Caveat', cursive;
+        /* display: none; */
+
     }
     .dissummer{
         float: left;
@@ -96,11 +189,22 @@ float: left;
         /* display: none; */
     
     }
+    .basket{
+        clear: left;
+        height: 70vh;  
+    }
     .winter{
         clear: left;
         height: 70vh;
     }
-    
+    .img33{
+        position: relative;
+        opacity: 0.3;
+        height: 100%;
+        width: 30%;
+        float: left;
+        
+    }
     .img3{
         position: relative;
         opacity: 0.3;
@@ -108,6 +212,15 @@ float: left;
         width: 30%;
         float: left;
         
+    }
+    .titlebasket{
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-weight: 100;
+        font-family: 'Lobster', cursive;
     }
     .titlewinter{
         position: absolute;
@@ -117,6 +230,20 @@ float: left;
         font-size: 50px;
         font-weight: 100;
         font-family: 'Lobster', cursive;
+    }
+    .disbasket{
+        float: right;
+    width: 65%;
+    font-size: 250%;
+    position: relative;
+    padding-top: 3%;
+    margin-top: 10%;
+    background-color: white;
+    opacity: 0.6;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-family: 'Caveat', cursive;
+    /* display: none; */
     }
     .diswinter{
         float: right;
@@ -147,5 +274,5 @@ float: left;
         /* padding-bottom: 3%; */
         padding: 5%;
         /* display: none; */
-        margin: 0 26%;
-    } */
+        /* margin: 0 26%;
+    } */ 
