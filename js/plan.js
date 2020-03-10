@@ -184,13 +184,13 @@ if (!localStorage.getItem('planTrip')) {
 else {
     loadPlanTrip();
     var check = document.getElementById('render');
-    if (check){
-        check.innerHTML = '';
-        renderPlan();
-    }
-    else{
-        renderPlan();
-    }
+    // if (check){
+    //     check.innerHTML = '';
+    //     renderPlan();
+    // }
+    // else{
+    //     renderPlan();
+    // }
 }
 
 
@@ -322,3 +322,33 @@ function renderPlan() {
 
 
 }
+
+var x = document.getElementById("container1");
+var y = document.getElementById("section-left");
+var z = document.getElementById('right')
+
+function myFunction() {
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      z.style.display = 'block';
+      y.style.display = "none";
+    } else {
+      x.style.display = "none";
+      z.style.display = 'none';
+      y.style.display = "none";
+    }
+  }
+
+  function myFunction2() {
+    if (y.style.display === "none") {
+      y.style.display = "block";
+      x.style.display = "none";
+      z.style.display = 'none';
+
+    } else {
+      y.style.display = "none";
+      x.style.display = "none";
+      z.style.display = 'none';
+
+    }
+  }
