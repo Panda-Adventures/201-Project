@@ -700,7 +700,7 @@ transition: 0.2s;
 
 
 
-/* .bg-modal {
+ .bg-modal {
 	background-color: rgba(0, 0, 0, 0.0);
 	width: 100%;
     height: 700px;
@@ -722,13 +722,13 @@ transition: 0.2s;
 	border-radius: 4px;
 }
 
-input {
+/* input {
 	margin: 15px auto;
 	display: block;
 	width: 50%;
 	padding: 8px;
 	border: 1px solid gray;
-}
+} */
 
 .close {
 	position: absolute;
@@ -898,11 +898,11 @@ background-color: white;
 
        
         
-} */
+} 
 /*pop section */
 
 /*pop section */
-.bg-modal {
+.bg-modal1 {
 	background-color: rgba(0, 0, 0, 0.0);
 	width: 100%;
     height: 700px;
@@ -933,15 +933,9 @@ background-color: white;
 } */
 
 
-/* .bg-modal1{
-    
-  width: 100%;
-    height: 1000px;
-    background-color: blueviolet;
-   
-} */
 
-.close {
+
+.close1 {
 	position: absolute;
 	top: 0;
 	right: 10px;

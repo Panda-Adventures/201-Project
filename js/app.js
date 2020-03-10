@@ -1,12 +1,12 @@
 'use strict'
 
-// document.getElementById('pop-btn').addEventListener("click", function() {
-// 	document.querySelector('.bg-modal').style.display = "flex";
-// });
+document.getElementById('pop-btn').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "flex";
+});
 
-// document.querySelector('.close').addEventListener("click", function() {
-// 	document.querySelector('.bg-modal').style.display = "none";
-// });
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "none";
+});
 
 document.getElementById('sign-dd').addEventListener("click", function() {
 	document.querySelector('.bg-modal1').style.display = "flex";
