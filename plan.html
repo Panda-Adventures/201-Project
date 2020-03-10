@@ -2,142 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="plan.css">
 </head>
 
 <body>
 
-    <main>
-        <form id="createPlan">
-            <fieldset>
-                <label for="destination">Choose your destination:</label>
-                <select name="destination" id="destination" form="destinationForm">
-                    <option value="Select an option">Select an option</option>
-                    <option value="Dana Hiking Trails">Dana Hiking Trails</option>
-                    <option value="Azraq Hiking Trail">Azraq Hiking Trail</option>
-                    <option value="Ajloun Hiking Trails">Ajloun Hiking Trails</option>
-                    <option value="Mujib Hiking Trails">Mujib Hiking Trails</option>
-                    <option value="Rift Valley Mountain">Rift Valley Mountain</option>
-                </select>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#h2form">
+          <button id='button-1' onclick="myFunction()" class="myButton">
+            Create Plan
+          </button>
+        </a>
+        </li>
+        <li>
+          <a href="#section-left">
+          <button id='button-2' onclick="myFunction2()" class="myButton">
+            Choose a Plan
+          </button>
+        </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-                <label for="period">Choose a period:</label>
-                <select name="period" id="period" form="destinationForm">
-                    <option value="Select an option">Select an option</option>
-                    <option value="Up to 2 hours">2 hours</option>
-                    <option value="3 - 4 hours">3 - 4 hours</option>
-                    <option value="Up to 6 hours">6 hours</option>
-                    <option value="Full day">Full day</option>
-                    <option value="More than one day">More than one day</option>
-                </select>
+  <main>
 
-                <label for="route">Choose a route:</label>
-                <select name="routes" id="routes" form="destinationForm">
-                    <option value="Select an option">Select an option</option>
-                </select>
+    <div id="right">
+      <section id="render"></section>
+    </div>
+    <div id="container1">
+      <form id="createPlan" class="form-style-5">
+        <fieldset>
 
-                <label for="transportation">Include transportation:</label>
-                <select name="transportation" id="transportation" form="destinationForm">
-                    <option value="Select an option">Select an option</option>
-                    <option value="No">No</option>
-                    <option value="yes">yes</option>
-                </select>
+          <h2 class="formh2" id="h2form">Create Your Adventure</h2>
 
-                <label for="food">Include food:</label>
-                <select name="food" id="food" form="destinationForm">
-                    <option value="Select an option">Select an option</option>
-                    <option value="No">No</option>
-                    <option value="yes">yes</option>
-                </select>
+          <label for="destination"> <span class="number">1</span> Choose your destination:</label>
+          <select name="destination" id="destination" form="destinationForm">
+            <option value="Select an option">Select an option</option>
+            <option value="Dana Hiking Trails">Dana Hiking Trails</option>
+            <option value="Azraq Hiking Trail">Azraq Hiking Trail</option>
+            <option value="Ajloun Hiking Trails">Ajloun Hiking Trails</option>
+            <option value="Mujib Hiking Trails">Mujib Hiking Trails</option>
+            <option value="Rift Valley Mountain">Rift Valley Mountain</option>
+          </select>
 
-                <label id="label" for="foodtype" style="display: none;">Type of Food:</label>
-                <select name="foodtype" id="foodtype" form="destinationForm" style="display: none;">
-                    <option value="NA">NA</option>
-                </select>
+          <label for="period"><span class="number">2</span>Choose a period:</label>
+          <select name="period" id="period" form="destinationForm">
+            <option value="Select an option">Select an option</option>
+            <option value="Up to 2 hours">2 hours</option>
+            <option value="3 - 4 hours">3 - 4 hours</option>
+            <option value="Up to 6 hours">6 hours</option>
+            <option value="Full day">Full day</option>
+            <option value="More than one day">More than one day</option>
+          </select>
 
-                <label for="equipment">Include equipment:</label>
-                <select name="equipment" id="equipment" form="destinationForm">
-                    <option value="Select an option">Select an option</option>
-                    <option value="No">No</option>
-                    <option value="yes">yes</option>
-                </select>
+          <label for="route"><span class="number">3</span>Choose a route:</label>
+          <select name="routes" id="routes" form="destinationForm">
+            <option value="Select an option">Select an option</option>
+          </select>
 
-                <label id="label2" for="equipmenttype" style="display: none;">Type of Equipment:</label>
-                <select name="equipmenttype" id="equipmenttype" form="destinationForm" style="display: none;">
-                    <option value="NA">NA</option>
-                </select>
+          <label for="transportation"><span class="number">4</span>Include transportation:</label>
+          <select name="transportation" id="transportation" form="destinationForm">
+            <option value="Select an option">Select an option</option>
+            <option value="No">No</option>
+            <option value="yes">yes</option>
+          </select>
 
-                <input type="submit" onclick="reset()">
+          <label for="food"><span class="number">5</span>Include food:</label>
+          <select name="food" id="food" form="destinationForm">
+            <option value="Select an option">Select an option</option>
+            <option value="No">No</option>
+            <option value="yes">yes</option>
+          </select>
 
-            </fieldset>
-        </form>
+          <label for="equipment"><span class="number">6</span>Include equipment:</label>
+          <select name="equipment" id="equipment" form="destinationForm">
+            <option value="Select an option">Select an option</option>
+            <option value="No">No</option>
+            <option value="yes">yes</option>
+          </select>
 
-        <section id="render"></section>
+          <label id="label" for="foodtype" style="display: none;"><span style="width: 30px;" class="number">7</span>Type
+            of Food:</label>
+          <select name="foodtype" id="foodtype" form="destinationForm" style="display: none;">
+            <option value="NA">NA</option>
+          </select>
 
-        <div>
-            <section id="section-left">
-              <form id="locationform">
-                <fieldset>
-                  <h1> Find your Trip:</h1>
-           
-                  <h3>The Time of Trip</h3>
-                  <label for="Time of Trip">Time of Trip</label>
-                  <select id="TimeofTrip" name="Time of Trip" class="formField">
-                    <option value="any">Any</option>
-                    <option value="up to 2 hours">up to 2 hours</option>
-                    <option value="up to 3-4 hours">up to 3-4 hours</option>
-                    <option value="up to 6 hours">up to 6 hours</option>
-                    <option value="Full Day">Full Day</option>
-                    <option value="More Than One Day">More Than One Day</option>
-                  </select><br><br>
-        
-        
-                  <h3>The Grade of Trip</h3>
-                  <label for="Grade of Trip">Grade of Trip</label>
-                  <select id="GradeofTrip" name="Grad of Trip">
-                    <option value="any">Any</option>
-                    <option value="Difficult">Difficult</option>
-                    <option value="Moderate">Moderate</option>
-                    <option value="Easy">Easy</option><br><br>
-                  </select><br><br>
-        
-        
-        
-                  <label for="Location Name">Location Name</label>
-                  <select id="LocationName" name="Location Name">
-                    <option value="NA">No Available Places </option>
-        
-                  </select>
-                  <br><br>
-                  <div id="route_div">
-                    <label for="route">Route</label>
-                    <select id="route" name="route">
-                      <option value="NA">No Available Places </option>
-        
-                    </select>
-                  </div>
-                  <br><br>
-        
-        
-                  <button type="button" class="submitButton" id="moreInfo">More!</button>
-        
-              </form>
-              </fieldset>
-              </form>
-            </section>
-        
-        
-            <section id="section-right">
-              <div id="info"></div>
-        
-            </section>
+          <label id="label2" for="equipmenttype" style="display: none;"><span style="width: 30px;"
+              class="number">8</span>Type of Equipment:</label>
+          <select name="equipmenttype" id="equipmenttype" form="destinationForm" style="display: none;">
+            <option value="NA">NA</option>
+          </select>
+
+          <input type="submit" onclick="reset()">
+
+        </fieldset>
+      </form>
+    </div>
+
+
+
+    <section id="section-right">
+      <div id="info"></div>
+    </section>
+    ] <section id="section-left">
+      <form id="locationform" class="form-style-5">
+        <fieldset>
+
+          <h2 class="formh2">Find your Trip:</h2>
+
+          <label for="Time of Trip"><span class="number">1</span>Time of Trip</label>
+          <select id="TimeofTrip" name="Time of Trip">
+            <option value="any">Any</option>
+            <option value="up to 2 hours">up to 2 hours</option>
+            <option value="up to 3-4 hours">up to 3-4 hours</option>
+            <option value="up to 6 hours">up to 6 hours</option>
+            <option value="Full Day">Full Day</option>
+            <option value="More Than One Day">More Than One Day</option>
+          </select>
+
+
+          <label for="Grade of Trip"><span class="number">2</span>Grade of Trip</label>
+          <select id="GradeofTrip" name="Grad of Trip">
+            <option value="any">Any</option>
+            <option value="Difficult">Difficult</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Easy">Easy</option><br><br>
+          </select>
+
+
+
+          <label for="Location Name"><span class="number">3</span>Location Name</label>
+          <select id="LocationName" name="Location Name">
+            <option value="NA">No Available Places </option>
+
+          </select>
+
+          <div id="route_div">
+            <label for="route"><span class="number">4</span>Route</label>
+            <select id="route" name="route">
+              <option value="NA">No Available Places </option>
+
+            </select>
           </div>
 
-    </main>
 
-    <script src="js/plan.js"></script>
-    <script src="sahar/app.js"></script>
+
+          <input type="submit" class="submitButton" id="moreInfo">
+
+      </form>
+      </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/plan.js"></script>
+  <script src="sahar/app.js"></script>
 
 </body>
 
