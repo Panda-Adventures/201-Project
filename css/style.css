@@ -1010,7 +1010,7 @@ background-color: white;
 
 
 
-p span input {
+.check.aa input {
     cursor: pointer;
 }
 .selectdate{
@@ -1021,21 +1021,14 @@ p span input {
     margin: 2px;
 }
 
- .input11{
+.gender1 input{
+    color: black;
     cursor: pointer;
-    margin-top: 20ox;
+    margin-top: 10px;
+    margin-bottom: 20px;
     
-}
-.input21{
-    cursor: pointer;
-    margin-top: 20ox;
-}
-
-.input31{
-
-    cursor: pointer;
-    margin-top: 20ox;
-}
+    
+ }
 
 .gender1{
     margin-left: -40px;
