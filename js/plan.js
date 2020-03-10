@@ -1,10 +1,8 @@
 'use strict';
 
-
-
-var newlocation = [];// this array to save the proparty and vlaue
-var foodtype = ['Breakfast Dish', 'Summer Dish', 'Winter Dish'];
-var equipmenttype = ['uniform', 'uniform & guiding tools', 'uniform, guiding tools, and first-aid kit'];
+var packagedLocations = [];// this array to save the proparty and vlaue
+var foodType = ['Breakfast Dish', 'Summer Dish', 'Winter Dish'];
+var equipmentType = ['uniform', 'uniform & guiding tools', 'uniform, guiding tools, and first-aid kit'];
 function PackageTrip(LocationName, routes, Grade, period, date, type, distance, time, startingTime, size, discription, food) {
     this.LocationName = LocationName;
     this.routes = routes;
@@ -19,11 +17,11 @@ function PackageTrip(LocationName, routes, Grade, period, date, type, distance, 
     this.discription = discription;
     this.food = food;
 
-    newlocation.push(this);
+    packagedLocations.push(this);
     return this;
 }
 
-function save_locations() {//this function creat the location and save them in local storage.
+function createPackagedTrips() {//this function creat the location and save them in local storage.
     new PackageTrip('Dana Hiking Trails', 'From Rummana Campsite:Campsite Trail', 'Easy', 'up to 2 hours', "(March 15 – October 31)", "guided or self-guided", "1.5 km", "1 hour", "8:00 a.m. – 3:00 p.m. from the Rummana Campsite", "4-20 people", "This circular walk around the Rummana campsite is a great place to see birds, especially during migration seasons. The scenic viewpoints along the trail offer picturesque views of the Dana Mountains", 'food1');
     new PackageTrip('Dana Hiking Trails', 'From Rummana Campsite: Rummana Mountain Trail', 'Moderate', 'up to 2 hours', '(March 15 – October 31)', 'guided or self-guided', '2.5 km', '2 hours', '8:00 a.m. – 3:00 p.m. from the Rummana Campsite', '4-20 people', 'This circular trail starts from the campsite and ascends to the top to Rummana Mountain, where the views of Wadi Araba are breathtaking. Highlights on the trail include magnificent sandstone and limestone formations, birds of prey, and beautiful views of the nature reserve.');
     new PackageTrip('Azraq Hiking Trail', 'Marsh Trail', 'Easy', 'up to 2 hours', '(Year-round)', ' guided or self-guided', '1.5 km', '30 minutes', ' 9:00 a.m. to 4:00 p.m. (winter); 9:00 a.m. to 6:00 p.m. (summer)', '4-20 people', 'This easy walking trail gives you an excellent introduction to the Azraq Wetland Reserve. The boardwalk leads you through dry and wet areas to a viewing platform overlooking the artesian pools that once released millions of cubic meters of water into the marshland. After leaving the platform, the trail takes you over an ancient black basalt wall, most likely constructed by an Umayyad Caliph. The trail then leads to a bird hide made of local mud brick where you can observe the migratory birds and perhaps catch a glimpse of the water buffalo. Follow the trail back to the Visitor Center, passing yet another part of the ancient basalt wall.');
@@ -45,23 +43,21 @@ function save_locations() {//this function creat the location and save them in l
     new PackageTrip('Rift Valley Mountain', 'Wadi Al Nakheel Trail', 'Moderate', 'More Than One Day', '(Year-round, except during Ramadan)', 'guided only', '18 km', ' 7 - 8 hrs', '6:30 a.m.', '10-20 people', 'This trail offers an aquatic hike through small pools of water,especially refreshing during spring time. With different stone formations, this trail is reminiscent of the famous Siq of Petra “Petra canyon”. After 3 - 4 hours, you will take a relaxing tea break,whilst learning more about the spectacular surroundings from your local guide. Upon reaching the green valleys of Albustaan, you will meet your Bedouin hosts and sleep in a Bedouin tent.');
     new PackageTrip('Rift Valley Mountain', 'Al Matal Trail', 'Easy', 'More Than One Day', '(Year-round, except during Ramadan)', 'guided only', '14 km', ' 5 - 6 hrs', '6:30 a.m.', '10-20 people', 'This easier hike starts from the old village of Sihan, which was inhabited by Shobaki locals up until the nineteenth century. Only ruins of the old stone houses now stand witness to a once lively community in Sihan. A high viewpoint is easily reached, rewarding you with magnificent views of Shobak’s proposed protected area. Following the Al Hazeem road you reach the Ras Al Faid area, where you spend your last night in Shobak before heading towards little Petra.');
 
-    var productstring = JSON.stringify(newlocation);//to transfer the object to json formate (string)
-    localStorage.setItem('locations', productstring);
+    var packagedLocationsString = JSON.stringify(packagedLocations);//to transfer the object to json formate (string)
+    localStorage.setItem('packagedLocations', packagedLocationsString);
 }
 
-// save_locations();
-
-function load_locations() {//to search that locations are stored in the storage, if not, call save function to generate and save locations 
-    var productstring = localStorage.getItem('locations');
-    if (productstring) {
-        newlocation = JSON.parse(productstring);
+function loadPackegedTrips() {//to search that locations are stored in the storage, if not, call save function to generate and save locations 
+    var packagedLocationsString = localStorage.getItem('packagedLocations');
+    if (packagedLocationsString) {
+        packagedLocations = JSON.parse(packagedLocationsString);
     }
     else {
-        save_locations();
+        createPackagedTrips();
     }
 
 }
-load_locations();
+loadPackegedTrips();
 
 
 
@@ -69,26 +65,26 @@ var tripDestination = document.getElementById('destination');
 
 tripDestination.addEventListener("change", function () { // modify the select options depending on the selected filters
 
-    var container = document.getElementById('route');
-    if (container !== null) {
+    var containerElement = document.getElementById('routes');
+    if (containerElement !== null) {
 
-        container.innerHTML = "";//remove all the option before and when we change the time of trip the select liste change as we choose in time of trip
+        containerElement.innerHTML = "";//remove all the option before and when we change the time of trip the select liste change as we choose in time of trip
 
-        for (var i = 0; i < newlocation.length; i++) { // iterate over all locations
+        for (var i = 0; i < packagedLocations.length; i++) { // iterate over all locations
             // check if the filters match the location, and display it
-            if (tripDestination.value == newlocation[i].LocationName) {
-                var opt = document.createElement('option');
-                opt.appendChild(document.createTextNode(newlocation[i].routes));
-                opt.value = newlocation[i].routes;
-                container.appendChild(opt);
+            if (tripDestination.value == packagedLocations[i].LocationName) {
+                var optEl = document.createElement('option');
+                optEl.appendChild(document.createTextNode(packagedLocations[i].routes));
+                optEl.value = packagedLocations[i].routes;
+                containerElement.appendChild(optEl);
             }
 
         }
-        if (container.options.length == 0) { // if the select is empty, add default
-            var opt = document.createElement('option');
-            opt.appendChild(document.createTextNode("No Available Places"));
-            opt.value = "NA";
-            container.appendChild(opt);
+        if (containerElement.options.length == 0) { // if the select is empty, add default
+            var optEl = document.createElement('option');
+            optEl.appendChild(document.createTextNode("No Available Places"));
+            optEl.value = "NA";
+            containerElement.appendChild(optEl);
         }
 
     }
@@ -99,37 +95,37 @@ var tripFood = document.getElementById('food');
 tripFood.addEventListener("change", function () { // modify the select options depending on the selected filters
 
 
-    var container = document.getElementById('foodtype');
-    if (container !== null) {
+    var containerElement = document.getElementById('foodtype');
+    if (containerElement !== null) {
 
-        container.innerHTML = "";//remove all the option before and when we change the time of trip the select liste change as we choose in time of trip
+        containerElement.innerHTML = "";//remove all the option before and when we change the time of trip the select liste change as we choose in time of trip
 
         if (tripFood.value === 'yes') {
 
-            for (var i = 0; i < foodtype.length; i++) {
-                var opt = document.createElement('option');
-                opt.appendChild(document.createTextNode(foodtype[i]));
-                opt.value = foodtype[i];
-                container.appendChild(opt);
-                var opt = document.getElementById('foodtype');
-                opt.style.display = 'inline-block';
-                var opt2 = document.getElementById('label');
-                opt2.style.display = 'inline-block';
+            for (var i = 0; i < foodType.length; i++) {
+                var optEl = document.createElement('option');
+                optEl.appendChild(document.createTextNode(foodType[i]));
+                optEl.value = foodType[i];
+                containerElement.appendChild(optEl);
+                var optEl = document.getElementById('foodtype');
+                optEl.style.display = 'inline-block';
+                var optEl2 = document.getElementById('label');
+                optEl2.style.display = 'inline-block';
             }
 
         }
         else {
-            var opt = document.getElementById('foodtype');
-            opt.style.display = 'none';
-            var opt2 = document.getElementById('label');
-            opt2.style.display = 'none';
+            var optEl = document.getElementById('foodtype');
+            optEl.style.display = 'none';
+            var optEl2 = document.getElementById('label');
+            optEl2.style.display = 'none';
         }
 
-        if (container.options.length == 0) { // if the select is empty, add default
-            var opt = document.createElement('option');
-            opt.appendChild(document.createTextNode("No Available Places"));
-            opt.value = "NA";
-            container.appendChild(opt);
+        if (containerElement.options.length == 0) { // if the select is empty, add default
+            var optEl = document.createElement('option');
+            optEl.appendChild(document.createTextNode("No Available Places"));
+            optEl.value = "NA";
+            containerElement.appendChild(optEl);
 
         }
 
@@ -141,37 +137,37 @@ var tripEquipment = document.getElementById('equipment');
 tripEquipment.addEventListener("change", function () { // modify the select options depending on the selected filters
 
 
-    var container = document.getElementById('equipmenttype');
-    if (container !== null) {
+    var containerElement = document.getElementById('equipmenttype');
+    if (containerElement !== null) {
 
-        container.innerHTML = "";//remove all the option before and when we change the time of trip the select liste change as we choose in time of trip
+        containerElement.innerHTML = "";//remove all the option before and when we change the time of trip the select liste change as we choose in time of trip
 
         if (tripEquipment.value === 'yes') {
 
-            for (var i = 0; i < equipmenttype.length; i++) {
-                var opt = document.createElement('option');
-                opt.appendChild(document.createTextNode(equipmenttype[i]));
-                opt.value = equipmenttype[i];
-                container.appendChild(opt);
-                var opt = document.getElementById('equipmenttype');
-                opt.style.display = 'inline-block';
-                var opt2 = document.getElementById('label2');
-                opt2.style.display = 'inline-block';
+            for (var i = 0; i < equipmentType.length; i++) {
+                var optEl = document.createElement('option');
+                optEl.appendChild(document.createTextNode(equipmentType[i]));
+                optEl.value = equipmentType[i];
+                containerElement.appendChild(optEl);
+                var optEl = document.getElementById('equipmenttype');
+                optEl.style.display = 'inline-block';
+                var optEl2 = document.getElementById('label2');
+                optEl2.style.display = 'inline-block';
             }
 
         }
         else {
-            var opt = document.getElementById('equipmenttype');
-            opt.style.display = 'none';
-            var opt2 = document.getElementById('label2');
-            opt2.style.display = 'none';
+            var optEl = document.getElementById('equipmenttype');
+            optEl.style.display = 'none';
+            var optEl2 = document.getElementById('label2');
+            optEl2.style.display = 'none';
         }
 
-        if (container.options.length == 0) { // if the select is empty, add default
-            var opt = document.createElement('option');
-            opt.appendChild(document.createTextNode("No Available Places"));
-            opt.value = "NA";
-            container.appendChild(opt);
+        if (containerElement.options.length == 0) { // if the select is empty, add default
+            var optEl = document.createElement('option');
+            optEl.appendChild(document.createTextNode("No Available Places"));
+            optEl.value = "NA";
+            containerElement.appendChild(optEl);
 
         }
 
@@ -209,11 +205,11 @@ formValues.addEventListener('submit', function (event) {
     var route = event.target.elements[0].elements[2].value;
     var transportation = event.target.elements[0].elements[3].value;
     var food = event.target.elements[0].elements[4].value;
-    var foodtype = event.target.elements[0].elements[5].value;
+    var foodType = event.target.elements[0].elements[5].value;
     var equipment = event.target.elements[0].elements[6].value;
-    var equipmenttype = event.target.elements[0].elements[7].value;
+    var equipmentType = event.target.elements[0].elements[7].value;
 
-    new PlanTrip(locationName, period, route, transportation, food, foodtype, equipment, equipmenttype);
+    new PlanTrip(locationName, period, route, transportation, food, foodType, equipment, equipmentType);
 
     var planTripString = JSON.stringify(newplanLocations);
     localStorage.setItem('planTrip', planTripString);
@@ -232,7 +228,7 @@ formValues.addEventListener('submit', function (event) {
 });
 
 
-function PlanTrip(locationName, period, route, transportation, food, foodtype, equipment, equipmenttype) {
+function PlanTrip(locationName, period, route, transportation, food, foodType, equipment, equipmentType) {
 
     this.locationName = locationName;
     this.period = period;
@@ -241,16 +237,16 @@ function PlanTrip(locationName, period, route, transportation, food, foodtype, e
     this.discription;
     this.transportation = transportation;
     this.food = food;
-    this.foodtype = foodtype;
+    this.foodType = foodType;
     this.equipment = equipment;
-    this.equipmenttype = equipmenttype;
-    for (var i = 0; i < newlocation.length; i++) {
-        if (this.route === newlocation[i].routes) {
+    this.equipmentType = equipmentType;
+    for (var i = 0; i < packagedLocations.length; i++) {
+        if (this.route === packagedLocations[i].routes) {
 
-            this.distance = newlocation[i].distance;
-            this.discription = newlocation[i].discription;
-            this.size = newlocation[i].size;
-            this.grade = newlocation[i].Grade;
+            this.distance = packagedLocations[i].distance;
+            this.discription = packagedLocations[i].discription;
+            this.size = packagedLocations[i].size;
+            this.grade = packagedLocations[i].Grade;
 
         }
     }
@@ -288,7 +284,7 @@ function renderPlan() {
 
     if (loadplanLocations[loadplanLocations.length -1].food === 'yes') {
         var h6El = document.createElement('h6');
-        h6El.textContent = `We will be providing you with our fine meals of the ${loadplanLocations[loadplanLocations.length -1].foodtype} to enjoy through the hike and to keep you at full energy`
+        h6El.textContent = `We will be providing you with our fine meals of the ${loadplanLocations[loadplanLocations.length -1].foodType} to enjoy through the hike and to keep you at full energy`
         canvas.appendChild(h6El);
     }
 
@@ -301,7 +297,7 @@ function renderPlan() {
 
     if (loadplanLocations[0].equipment === 'yes') {
         var h6El = document.createElement('h6');
-        h6El.textContent = `We will be providing you with our high quality ${loadplanLocations[loadplanLocations.length -1].equipmenttype} to help you on getting over the challenges of the hike with ease`
+        h6El.textContent = `We will be providing you with our high quality ${loadplanLocations[loadplanLocations.length -1].equipmentType} to help you on getting over the challenges of the hike with ease`
         canvas.appendChild(h6El);
     }
 
