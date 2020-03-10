@@ -39,6 +39,7 @@ header{
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
+    
   }
   
   .card:not(:first-child) {
@@ -164,3 +165,44 @@ width: 61%;
 
 
   }
+
+
+
+
+
+/* Parent Container */
+.title{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Child Text Container */
+.title div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;  
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.title:hover{
+    cursor: pointer;
+}    
+
+.title:hover:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;        
+}
+    
