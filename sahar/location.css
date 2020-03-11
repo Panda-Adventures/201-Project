@@ -21,6 +21,7 @@ header{
   .container {
     position: absolute;
     height: 300px;
+    width: 100%;
     top: 60px;
     left: calc(34% - 300px);
     display: flex;
@@ -32,6 +33,7 @@ header{
     display: flex;
     height: 500px;
     width: 241px;
+  
     background-color: #17141d;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
@@ -69,7 +71,7 @@ header{
   
   .bar {
     position: absolute;
-    top: 100px;
+    top: 220px;
     left: 20px;
     height: 5px;
     width: 150px;
@@ -83,7 +85,7 @@ header{
   
   .filledbar {
     position: absolute;
-    top: 0px;
+    top: 0;
     z-index: 3;
     width: 0px;
     height: 100%;
@@ -101,6 +103,8 @@ header{
     position: absolute;
     top: 150px;
     left: calc(50% - 60px);
+    width: 60%;
+
   }
   
   .stroke {
@@ -132,15 +136,17 @@ header{
   img{
 
 border-radius: 9px;
-height: 70px;
-width: 100%;
+height: 200px;
+width: 105%;
 
 
   }
 
   h4{
 color:wheat;
-font-size: 12px;
+height: 40px;
+padding-top: 134px;
+font-size: 15px;
 
 
 
@@ -148,7 +154,7 @@ font-size: 12px;
 
   h6{
 color:wheat;
-font-size: 11px;
+font-size: 14px;
 padding-bottom: 10%;
 
 
@@ -166,9 +172,25 @@ width: 61%;
 
   }
 
+h2{
 
+  font-size: 12px;
+  color: white;
 
+}
 
+h3{
+
+font-size: 16px;
+color:wheat;
+}
+
+p{
+
+  font-size: 14px;
+  color: white;
+
+}
 
 /* Parent Container */
 .title{
@@ -206,3 +228,11 @@ width: 61%;
     opacity: 0.7;        
 }
     
+
+.readmore:hover .floatingCard{
+  width: 300px;
+  padding: 5px 15px;
+  visibility: visible;
+  opacity: 0.7;  
+}
+
