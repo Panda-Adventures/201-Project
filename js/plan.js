@@ -326,29 +326,37 @@ function renderPlan() {
 var x = document.getElementById("container1");
 var y = document.getElementById("section-left");
 var z = document.getElementById('right')
+var w = document.getElementById('section-right')
 
 function myFunction() {
     if (x.style.display === "none") {
       x.style.display = "block";
       z.style.display = 'block';
       y.style.display = "none";
+      w.style.display = 'none';
     } else {
       x.style.display = "none";
       z.style.display = 'none';
       y.style.display = "none";
+      w.style.display = 'none';
+
     }
   }
 
   function myFunction2() {
     if (y.style.display === "none") {
       y.style.display = "block";
+      w.style.display = 'block';
       x.style.display = "none";
       z.style.display = 'none';
+      
 
     } else {
       y.style.display = "none";
       x.style.display = "none";
       z.style.display = 'none';
+      w.style.display = 'none';
+
 
     }
   }

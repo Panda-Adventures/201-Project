@@ -50,7 +50,7 @@ li{
 
 
 ul{
-    margin-left: 68%;
+    margin-left: 54%;
     padding-top: 2%;
 }
 
@@ -215,11 +215,11 @@ img:hover{
     background: teal;
     background: url(../img/header2.jpg);
     background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
+    /* background-position: center; */
+    height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     overflow: hidden;
 }
 
@@ -238,6 +238,8 @@ img:hover{
     transition: 0.5s ease;
     cursor: pointer;
     margin: 100px;
+    filter: grayscale(0.5);
+    margin-left: 5%;
 }
 
 .route-text p, .route-text h2{
@@ -261,7 +263,7 @@ img:hover{
 }
 
 .route-text .period{
-    color: rgb(255,7,110);
+    color: rgb(142, 183, 0);
     font-size: 13px;
 }
 
@@ -285,7 +287,7 @@ img:hover{
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: rgb(255,7,110);
+    background-color: rgb(92, 95, 59);
 }
 
 .route-stats .stat{
@@ -309,8 +311,8 @@ img:hover{
 }
 
 .route-stats .border{
-    border-left: 1px solid rgb(172,26,87);
-    border-right: 1px solid rgb(172,26,87);
+    border-left: 1px solid rgb(70, 72, 46);
+    border-right: 1px solid rgb(70, 72, 46);
 }
 
 .route-stats .value sup{
@@ -320,6 +322,66 @@ img:hover{
 .route:hover{
     transform: scale(1.2);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    filter: grayscale(0);
+    margin-left: 7%;
+}
+
+.route-image2{
+    grid-area: image;
+    background: url(../img/best12.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.route-text .period2{
+    color: rgb(243, 104, 0);
+    font-size: 13px;
+}
+
+.route-stats2{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(117, 72, 44);
+}
+
+.route-stats2 .border2{
+    border-left: 1px solid rgb(95, 61, 40);
+    border-right: 1px solid rgb(95, 61, 40);
+}
+
+.route-image3{
+    grid-area: image;
+    background: url(../img/best9.jpeg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.route-text .period3{
+    color: rgb(255, 188, 0);
+    font-size: 13px;
+}
+
+.route-stats3{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(210, 111, 68);
+}
+
+.route-stats3 .border3{
+    border-left: 1px solid rgb(185, 101, 65);
+    border-right: 1px solid rgb(185, 101, 65);
 }
 
 h3{
