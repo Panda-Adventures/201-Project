@@ -101,3 +101,51 @@ function buttonpass(){
         
     }
 }
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+var signinfo = [];
+var logpage = document.getElementById('logpage');
+var hereprint = document.getElementById('hereprint');
+
+function Sign(name,password){
+this.name =name;
+this.password =password;
+
+signinfo.push(this);
+
+}
+console.log(signinfo);
+
+function myFunction(event){
+    event.preventDefault();
+    var formId=document.getElementById('logpage');
+    var log =event.target;
+     var name =log.name.value;
+     var password =log.password.value;
+     new Sign(name,password);
+     render();
+     formId.reset();
+     //setItem();
+}
+
+
+function render(){
+hereprint.textContent="";
+for(var i=0 ;i < signinfo.length ;i++){
+var liEl =document.createElement('li');
+var pEl =document.createElement('p');
+pEl.textContent = ` your name is ${signinfo[i].name} and your pass is ${signinfo[i].name}`;
+liEl.appendChild(pEl);
+hereprint.appendChild(liEl);
+
+}
+console.log(render());
+
+
+}
+ logpage.addEventListener('submit',myFunction);
+
