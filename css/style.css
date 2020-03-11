@@ -763,15 +763,16 @@ transition: 0.2s;
 
 
  .bg-modal {
-	background-color: rgba(0, 0, 0, 0.0);
+	background-color: rgba(0, 0, 0, 0.4);
 	width: 100%;
-    height: 700px;
+    height: 900px;
 	position: absolute;
     top: 0%;
     z-index: 9999;
 	display: none;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    position: fixed;
 }
 
 .modal-contents {
@@ -907,19 +908,21 @@ transition: 0.2s;
 }
 
 .position{
-    border-radius: 100px;
+    border-radius: 20px;
     width: 1000px;
     height: 600px;
    
 background-color: white;
 
     position: absolute;
-    top: 8%;
-    left: 17%;
+    top: 20%;
+    left: 25%;
     
-    border-radius: 1px;
+    
     
    overflow: hidden;
+   animation: signUp 0.2s linear 1;
+
  
 
 }
@@ -969,16 +972,20 @@ background-color: white;
 
 /*pop section */
 .bg-modal1 {
-	background-color: rgba(0, 0, 0, 0.0);
+	background-color: rgba(0, 0, 0, 0.4);
 	width: 100%;
-    height: 700px;
+    height: 900px;
 	position: absolute;
     top: 0%;
     z-index: 9999;
 	display: none;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    position: fixed;
+    
 }
+
+
 
 .modal-contents {
 	height: 300px;
@@ -1013,23 +1020,70 @@ background-color: white;
 		color: #666;
 	}
     .postion1{
-        border-radius: 100px;
         width: 1000px;
         height: 700px;
-       
+       border-radius: 20px;
     background-color: white;
     
         position: absolute;
-        top: 20%;
-        /* left: 17%; */
-        
-        border-radius: 1px;
+        top: 15%;
+        left: 25%;
         
        overflow: hidden;
      
-    
+       animation: signUp 0.2s linear 1;
+       
     }
    
+@keyframes signUp{
+    0%   {
+        border-radius: 100%;
+        top:100%
+    }
+      
+    10%{
+        border-radius: 100%;
+        top:90%;
+    }
+    
+    20%{
+        border-radius: 100%;
+        top:80%;
+    }
+    30%{
+        border-radius: 100%; 
+        top:70%;
+    }
+    40%{
+        border-radius: 100%; 
+        top:60%;
+    }
+    50%{
+        border-radius: 90%;    
+        top:50%;
+    }
+    60%{
+        border-radius: 80%; 
+        top:40%;
+    }
+    70%{
+        border-radius: 70%;
+        top:30%;
+    }
+    80%{
+        border-radius: 60%; 
+        top:20%;
+    }
+    90%{
+        border-radius: 50%;
+        top:15%;
+    }
+    100%{
+        border-radius: 40%;
+        top:15%;
+    }
+
+}
 
 .myImages1 img{
     position: absolute;
@@ -1070,8 +1124,9 @@ background-color: white;
 
 
 .passw1{
-    margin-left: -170px;
-    margin-bottom: 10px;
+    margin-left: 4px;
+    margin-top: 5%;
+    margin-bottom:5% ;
     cursor: pointer;
 }
 
@@ -1083,39 +1138,37 @@ background-color: white;
 .selectdate{
     cursor: pointer;
     border-radius: 10px;
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     margin: 2px;
+    background-color: rgb(236, 204, 162);
+    margin-bottom: 10%;
 }
 
 .gender1 input{
     color: black;
     cursor: pointer;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
     
  }
 
 .gender1{
-    margin-left: -40px;
+    margin-left: 0%;
 }
 
 
 .sign-in1 {
-    width: 490px;
-    width: 49%;
-   height: 1000px;
-   
-    padding:20px;
+    width: 50%;
+   height: 95%;
+    padding:10px;
    opacity: .9;
-    text-align: center;
-   
     margin: 9% auto 0;
     z-index: 999;
     position: absolute;
-    top: -15%;
-    left: 40%;
+    top: -10%;
+    left: 45%;
     
    
 }
@@ -1144,14 +1197,14 @@ left: 63%;
    font-size: 40px;
     border-bottom: 6px solid #07BCBC;
     margin-bottom:20px;
-    margin-left: 100px;
+    margin-left: 40px;
     margin-top: -10px;
     padding: 10px 0;
 
 
 }
 
-.findMore1{
+/* .findMore1{
     text-align: left;
     font-size: 15px;
     word-spacing: 2px;
@@ -1161,35 +1214,51 @@ left: 63%;
     margin-top: 10px ;
     margin-left: 100px;
     
-}
-.findMore1 a{
+} */
+/* .findMore1 a{
     color: blue;
     font-weight: 800;
     text-decoration: underline;
    
-}
+} */
 
 .input-box1{
-    border-radius: 20px;
+    border-bottom:4px solid black;
     padding: 10px;
     margin: 10px  0;
     width: 90%;
     outline: none;
-    border: 1px snow #999;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     
 
 }
+.input-box1{
+    border: none ;
+    border-bottom: 2px solid gray;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    line-height: 40px;
+    width: 300px;
+    margin: 10px 30px 0 0;
+    
+    
+}
 
+.input-box1:active , .input-box1:focus{
+    border-bottom:7px solid  #07BCBC;
+ 
+}
 .postion1 button{
     color: #fff;
 border-radius: 20px;
 padding: 10px;
 max-width: 10px 0;
-width: 60%;
+width: 75%;
 outline: none;
 border: 1px solid;
-font-size: 15px;
+font-size: 25px;
 cursor: pointer;
 
 
@@ -1198,6 +1267,9 @@ cursor: pointer;
 
 
 .signUp-btn1{
+    height: 10%;
+   margin-left: -6px;
+    margin-top: 10px;
     background-color: #07BCBC;
 
 
@@ -1207,14 +1279,14 @@ cursor: pointer;
     box-shadow: 0px 0px 18px  rgb(27, 179, 179) ;
 }
 
-.signface-btn1{
+/* .signface-btn1{
     background-color:rgb(32, 143, 143);
     
 }
 .signface-btn1:hover{
     box-shadow: 0px 0px 18px #07BCBC;
     
-}
+} */
 
 
  a{
@@ -1259,8 +1331,9 @@ width: 70%;
 }
 
 .field{
-    width: 300px;
-   margin-left: 90px;
+    width: 90%;
+    height: 80%;
+   margin-left: 40px;
     border-radius: 30px;
     background-color: white;
     

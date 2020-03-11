@@ -1,3 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+.bg-social{
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 37%;
+  height: 9%;
+  position: absolute;
+  position: fixed;
+  top: 30.8%;
+  left:-0.5%;
+  display: none;
+  border-radius: 0 200px 200px 0;
+  font-family: 'Caveat', cursive;
+  z-index: 99999999;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+.close4 {
+  position: absolute;
+  top: 19%;
+  right: 15px;
+  font-size: 42px;
+  color: rgb(129, 125, 125);
+  z-index: 99999999;
+  transform: rotate(45deg);
+  cursor: pointer;}
+  .close4:hover {
+      color: white;
+  }
+
+
+.social1{
+  background-color: rgb(214,214,214,.1);
+  display:flex;
+  width: 290px;
+  height: 80px;
+  margin-left: 40%;
+  align-content: center;
+  justify-content: center;
+  margin-top: -1%;
+  min-height: 100hv;
+}
+.ss-btn{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  background:rgb(214,214,214);
+  border-radius: 50%;
+  box-shadow: -9px -9px 20px 0 rgb(255,255,255,0.9),
+  7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+
+
+}
+
+.ss-btn::before{
+content: "";
+position: absolute;
+height: 80%;
+width: 80%;
+background:rgb(214,214,214);
+border-radius: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+transition: 0.2s;
+
+}
+.ss-btn:hover::before{
+  box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
+  inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.ss-btn:hover i {
+  font-size: 30px;
+}
+.ss-btn:hover{
+  transform: scale(1.1);
+}
+.ss-btn i {
+  position: absolute;
+  color: #07BCBC;
+  font-size: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+
+
+
+
+
+/* mmmmmmmmmmmmmTHE CLOCK PARTmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+#MyClockDisplay{
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Orbitron' ;
+    color: #fff;
+    text-shadow: 0 0 20px #17bcbd;
+margin-left: 200px;
+margin-top: 6.%;
+
+}
+.bg-clock{
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 37%;
+  height: 9%;
+  position: absolute;
+  position: fixed;
+  top: 22.8%;
+  left:-0.5%;
+  display: none;
+  border-radius: 0 200px 200px 0;
+  font-family: 'Caveat', cursive;
+  z-index: 99999999;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.close3 {
+  position: absolute;
+  top: 16%;
+  right: 15px;
+  font-size: 42px;
+  color: rgb(129, 125, 125);
+  z-index: 99999999;
+  transform: rotate(45deg);
+  cursor: pointer;}
+  .close3:hover {
+      color:white;
+    
+ 
+  }
+
+.celender{
+  
+  color: gray;
+  width: 860px;
+  height: 550px;
+  border-radius: 15px;
+  margin: 0 auto;
+  border-radius: 0 10px 10px 0;
+  top: 20%;
+  left: 30%;
+  z-index: 99999;
+  position: absolute;
+  
+}
+.dates{
+
+
+  width: 500px;
+  height:550px;
+  background-color:white;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+
+}
+.time{
+  width: 378px;
+  display: block;
+  margin: 0px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+.week ul{
+float: left;
+font-size: small;
+}
+.span{
+  float: left;
+  font-size: 40px;
+}
+
+.time h2{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.week{
+
+  margin: 0px auto;
+  font-size: 20px;
+  display: block;
+  width: 380px;
+  height: 40px;
+  
+  margin-left: -7px;
+  border-bottom: 4px solid linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  
+}
+
+.week ul{
+  list-style: none;
+  margin: 0px ;
+  padding: 0px ;
+ 
+
+
+
+}
+.week li{
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0px 4px;
+
+ 
+ 
+}
+.day{
+  margin: 0px auto;
+  display: inline-block;
+  
+  
+
+}
+
+.day ul{
+  margin: 0px auto;
+  list-style: none;
+  padding: 0px;
+  width: 355px;
+ 
+}
+.day li{
+  float: left;
+  width: 50px;
+  height: 50px;
+  list-style: none;
+  margin-top: 4px;
+  
+ 
+}
+.day li:hover {
+background:rgb(223, 7, 72);
+color: white;
+border-radius:50%;
+
+box-sizing: border-box;
+transform: scale(0.9);
+text-align: center;
+margin-left: -20px;
+margin-top: -10px;
+/*we use margin here to control the background position 
+and use the padding to controll number posion inside this circle background*/
+cursor: pointer;
+overflow: hidden;
+padding: 10px 5px;
+}
+
+.week hr{
+  
+      height: 5px;
+      width: 100%;
+      
+      background-image: linear-gradient(to right, rgb(7, 188, 188),rgb(12, 97, 97),rgb(247, 224, 224),rgb(7, 188, 188),rgb(12, 97, 97),white,rgb(7, 188, 188));
+  
+}
+.current-date{
+
+  width: 370px;
+  display: block;
+  margin: 0px auto;
+  clear: both;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 50px;
+  
+
+}
+.event{
+position: absolute;
+top: 0%;
+left: 100%;
+opacity: .9;
+border: 40px solid white;
+  color: white;
+  overflow: hidden;
+  height: 470px;
+  width: 360px;
+  border-radius: 0px 15px 15px 0px;
+  
+  background-image: linear-gradient(to right, #07BCBC , rgb(247, 224, 224));
+}
+.notee input{
+ position: absolute;
+width:360px ;
+height: 464px;
+font-family: 'Caveat', cursive;
+text-align: center;
+font-size: 30px;
+background-image:linear-gradient(to right, rgb(7, 188, 188) , rgb(247, 224, 224));
+}
+
+.bg-celender {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left:0;
+  display: none;
+  font-family: 'Caveat', cursive;
+  z-index: 99999999;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.close2 {
+  position: absolute;
+  top: -4px;
+  right: -70px;
+  font-size: 42px;
+  color: rgb(121, 116, 116);
+  z-index: 99999999;
+  transform: rotate(45deg);
+  cursor: pointer;}
+  .close2:hover {
+  
+      color: rgb(10, 10, 10);
+  }
+
+
 :root {
         font-size: 16px;
         font-family: 'Open Sans';
@@ -11,7 +353,7 @@
 
     .ss-body{
 
-        color: black;
+        color: rgba(5, 5, 5, 0.753);
         background-color: white;
         margin: 0;
         padding: 0;
@@ -34,10 +376,13 @@
   
   .ss-navs{
       
-      transition: width 600ms ease;
+      transition: width 200ms ease;
       position: fixed;
-      background-color: var(--bg-primary);
+      background-color: rgb(85, 84, 84,0.9);
      
+  }
+  .ss-navs:hover{
+    background-color: black;
   }
   .ss-navs-nav{
     list-style: none;
@@ -158,7 +503,7 @@
     }
   
     .ss-navs:hover {
-      width: 16rem;
+      width: 15rem;
     }
   
     .ss-navs:hover .link-text {
@@ -213,3 +558,4 @@
   .solar #solarIcon {
     display: block;
   } */
+
