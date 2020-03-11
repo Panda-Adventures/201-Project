@@ -859,6 +859,8 @@ background-color: white;
     
     
    overflow: hidden;
+   animation: signUp 0.2s linear 1;
+
  
 
 }
@@ -918,7 +920,10 @@ background-color: white;
 	justify-content: center;
     align-items: center;
     position: fixed;
+    
 }
+
+
 
 .modal-contents {
 	height: 300px;
@@ -965,9 +970,59 @@ background-color: white;
         
        overflow: hidden;
      
-    
+       animation: signUp 0.2s linear 1;
+       
     }
    
+@keyframes signUp{
+    0%   {
+        border-radius: 100%;
+        top:100%
+    }
+      
+    10%{
+        border-radius: 100%;
+        top:90%;
+    }
+    
+    20%{
+        border-radius: 100%;
+        top:80%;
+    }
+    30%{
+        border-radius: 100%; 
+        top:70%;
+    }
+    40%{
+        border-radius: 100%; 
+        top:60%;
+    }
+    50%{
+        border-radius: 90%;    
+        top:50%;
+    }
+    60%{
+        border-radius: 80%; 
+        top:40%;
+    }
+    70%{
+        border-radius: 70%;
+        top:30%;
+    }
+    80%{
+        border-radius: 60%; 
+        top:20%;
+    }
+    90%{
+        border-radius: 50%;
+        top:15%;
+    }
+    100%{
+        border-radius: 40%;
+        top:15%;
+    }
+
+}
 
 .myImages1 img{
     position: absolute;

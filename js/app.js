@@ -33,14 +33,15 @@ document.getElementById('ss-calender').addEventListener("click", function() {
 document.querySelector('.close2').addEventListener("click", function() {
 	document.querySelector('.bg-celender').style.display = "none";
 });
-// mmmmmmmmmmmmmmmmmmmmmmTHE CELENDER mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-document.getElementById('clocks').addEventListener("click", function() {
+// mmmmmmmmmmmmmmmmmmmmmmTHE CLOCK mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+document.getElementById('clocks').addEventListener("mousemove", function() {
 	document.querySelector('.bg-clock').style.display = "flex";
 });
 
-document.querySelector('.close3').addEventListener("click", function() {
+document.getElementById('MyClockDisplay').addEventListener("mousemove", function() {
 	document.querySelector('.bg-clock').style.display = "none";
 });
+
 
 // mmmmmmmmmmmmmmmmmmmmmmTHE CLOCK mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 function showTime(){
