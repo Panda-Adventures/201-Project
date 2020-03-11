@@ -1,5 +1,12 @@
 'use strict'
+document.getElementById('socialss').addEventListener("click", function() {
+	document.querySelector('.bg-social').style.display = "flex";
+});
 
+document.querySelector('.close4').addEventListener("click", function() {
+	document.querySelector('.bg-social').style.display = "none";
+});
+// mmmmmmmmmmmmmmmmmmmmmmTHE log in mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
 document.getElementById('pop-btn').addEventListener("click", function() {
 	document.querySelector('.bg-modal').style.display = "flex";
@@ -8,6 +15,8 @@ document.getElementById('pop-btn').addEventListener("click", function() {
 document.querySelector('.close').addEventListener("click", function() {
 	document.querySelector('.bg-modal').style.display = "none";
 });
+// mmmmmmmmmmmmmmmmmmmmmmTHE sign up mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
 
 document.getElementById('sign-dd').addEventListener("click", function() {
 	document.querySelector('.bg-modal1').style.display = "flex";

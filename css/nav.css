@@ -1,24 +1,119 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+.bg-social{
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 37%;
+  height: 9%;
+  position: absolute;
+  position: fixed;
+  top: 30.8%;
+  left:-0.5%;
+  display: none;
+  border-radius: 0 200px 200px 0;
+  font-family: 'Caveat', cursive;
+  z-index: 99999999;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+
+
+
+.close4 {
+  position: absolute;
+  top: 19%;
+  right: 15px;
+  font-size: 42px;
+  color: rgb(129, 125, 125);
+  z-index: 99999999;
+  transform: rotate(45deg);
+  cursor: pointer;}
+  .close4:hover {
+      color: white;
+  }
+
+
+.social1{
+  background-color: rgb(214,214,214,.1);
+  display:flex;
+  width: 290px;
+  height: 80px;
+  margin-left: 40%;
+  align-content: center;
+  justify-content: center;
+  min-height: 100hv;
+}
+.ss-btn{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  background:rgb(214,214,214);
+  border-radius: 50%;
+  box-shadow: -9px -9px 20px 0 rgb(255,255,255,0.9),
+  7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+
+
+}
+
+.ss-btn::before{
+content: "";
+position: absolute;
+height: 80%;
+width: 80%;
+background:rgb(214,214,214);
+border-radius: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+transition: 0.2s;
+
+}
+.ss-btn:hover::before{
+  box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
+  inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.ss-btn:hover i {
+  font-size: 30px;
+}
+.ss-btn:hover{
+  transform: scale(1.1);
+}
+.ss-btn i {
+  position: absolute;
+  color: #07BCBC;
+  font-size: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+
+
+
+
+
+/* mmmmmmmmmmmmmTHE CLOCK PARTmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 #MyClockDisplay{
     font-weight: 900;
     font-size: 40px;
     font-family: 'Orbitron' ;
     color: #fff;
-    text-shadow: 0 0 20px #e70404;
-margin-left: 4px;
+    text-shadow: 0 0 20px #17bcbd;
+margin-left: 200px;
 margin-top: 6.%;
 
 }
 .bg-clock{
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 20%;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 37%;
   height: 9%;
   position: absolute;
   position: fixed;
   top: 22.8%;
-  left:12.5%;
+  left:-0.5%;
   display: none;
   border-radius: 0 200px 200px 0;
   font-family: 'Caveat', cursive;
@@ -32,15 +127,17 @@ margin-top: 6.%;
 
 .close3 {
   position: absolute;
-  top: 19%;
+  top: 16%;
   right: 15px;
   font-size: 42px;
-  color: #333;
+  color: rgb(129, 125, 125);
   z-index: 99999999;
   transform: rotate(45deg);
   cursor: pointer;}
-  .close:hover {
-      color: #666;
+  .close3:hover {
+      color:white;
+    
+ 
   }
 
 .celender{
@@ -229,15 +326,16 @@ background-image:linear-gradient(to right, rgb(7, 188, 188) , rgb(247, 224, 224)
 
 .close2 {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: -4px;
+  right: -70px;
   font-size: 42px;
-  color: #333;
+  color: rgb(121, 116, 116);
   z-index: 99999999;
   transform: rotate(45deg);
   cursor: pointer;}
-  .close:hover {
-      color: #666;
+  .close2:hover {
+  
+      color: rgb(10, 10, 10);
   }
 
 
