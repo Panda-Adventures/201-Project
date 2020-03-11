@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
     margin: 0 auto;
@@ -296,4 +299,11 @@ background-image:linear-gradient(to bottom,rgb(62,54,55),#392E29)
      padding-top: 5%;
      font-family: 'Maven Pro', sans-serif;
      font-size: x-large;
+    }
+    #upArrowe{
+        position: fixed ;
+        right: 2%;
+        bottom: 5% ;
+        background: transparent;
+        float: right;
     }
