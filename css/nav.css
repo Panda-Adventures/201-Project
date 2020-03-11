@@ -1,4 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+
+#MyClockDisplay{
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Orbitron' ;
+    color: #fff;
+    text-shadow: 0 0 20px #e70404;
+margin-left: 4px;
+margin-top: 6.%;
+
+}
+.bg-clock{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 20%;
+  height: 9%;
+  position: absolute;
+  position: fixed;
+  top: 22.8%;
+  left:12.5%;
+  display: none;
+  border-radius: 0 200px 200px 0;
+  font-family: 'Caveat', cursive;
+  z-index: 99999999;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.close3 {
+  position: absolute;
+  top: 19%;
+  right: 15px;
+  font-size: 42px;
+  color: #333;
+  z-index: 99999999;
+  transform: rotate(45deg);
+  cursor: pointer;}
+  .close:hover {
+      color: #666;
+  }
 
 .celender{
   
