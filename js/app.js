@@ -1,4 +1,10 @@
 'use strict'
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmTHE log in mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
 document.getElementById('socialss').addEventListener("click", function() {
 	document.querySelector('.bg-social').style.display = "flex";
 });
@@ -34,14 +40,13 @@ document.querySelector('.close2').addEventListener("click", function() {
 	document.querySelector('.bg-celender').style.display = "none";
 });
 // mmmmmmmmmmmmmmmmmmmmmmTHE CLOCK mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-document.getElementById('clocks').addEventListener("mousemove", function() {
+document.getElementById('clocks').addEventListener("click", function() {
 	document.querySelector('.bg-clock').style.display = "flex";
 });
 
-document.getElementById('MyClockDisplay').addEventListener("mousemove", function() {
+document.querySelector('.close3').addEventListener("click", function() {
 	document.querySelector('.bg-clock').style.display = "none";
 });
-
 
 // mmmmmmmmmmmmmmmmmmmmmmTHE CLOCK mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 function showTime(){

@@ -42,6 +42,7 @@
   margin-left: 40%;
   align-content: center;
   justify-content: center;
+  margin-top: -1%;
   min-height: 100hv;
 }
 .ss-btn{
@@ -557,3 +558,4 @@ background-image:linear-gradient(to right, rgb(7, 188, 188) , rgb(247, 224, 224)
   .solar #solarIcon {
     display: block;
   } */
+
