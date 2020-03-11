@@ -15,6 +15,14 @@ document.getElementById('sign-dd').addEventListener("click", function() {
 document.querySelector('.close1').addEventListener("click", function() {
 	document.querySelector('.bg-modal1').style.display = "none";
 });
+// mmmmmmmmmmmmmmmmmmmmmmTHE CELENDER mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+document.getElementById('ss-calender').addEventListener("click", function() {
+	document.querySelector('.bg-celender').style.display = "flex";
+});
+
+document.querySelector('.close3').addEventListener("click", function() {
+	document.querySelector('.bg-celender').style.display = "none";
+});
 
 var slideIndex = 1;
 showSlides(slideIndex);
