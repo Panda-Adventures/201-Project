@@ -1,0 +1,309 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.total{
+
+  background-image: url(../img/backgroundfood.jpg);
+  height: 250vh;
+  width: 100%;
+  background-size:cover;
+  background-position: center;
+  opacity:0.9;
+
+
+}
+.total2{
+
+    background-image: url(/img/woman-sitting-on-edge-of-rock-formation-1202821.jpg);
+    height: 250vh;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    opacity:0.9;
+  
+  
+  }
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 600%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 600%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.breakfast{
+height: 70vh;
+
+}
+.uniform{
+
+    height: 70vh;
+}
+.img1{
+    position: relative;
+/* opacity: 0.3; */
+height: 100%;
+width: 30%;
+float: left;
+
+}
+.img11{
+   
+        position: relative;
+    /* opacity: 0.3; */
+    height:50%;
+    width: 30%;
+    float: left;
+    
+}
+.titleuniform{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    font-weight: 100;
+    font-family: 'Lobster', cursive;
+
+}
+.titlebreakfast{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    font-weight: 100;
+    font-family: 'Lobster', cursive;
+
+}
+
+.disuniform{
+    float: right;
+    width: 65%;
+    font-size: 250%;
+    position: relative;
+    padding-top: 3%;
+    margin-top: 10%;
+    background-color: white;
+    opacity: 0.6;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-family: 'Caveat', cursive;
+    /* display: none; */
+}
+.disbreakfast{
+    float: right;
+    width: 65%;
+    font-size: 250%;
+    position: relative;
+    padding-top: 3%;
+    margin-top: 10%;
+    background-color: white;
+    opacity: 0.6;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-family: 'Caveat', cursive;
+    /* display: none; */
+    }
+    .guidingtools{
+
+        clear: left;
+        height: 70vh;
+    }
+    .summer{
+        clear: left;
+        height: 70vh;
+    }
+    .img22{
+        position: relative;
+        opacity: 0.3;
+        height: 100%;
+        width: 30%;
+        float: right;
+        margin: -2.5%;
+    }
+       
+    .img2{
+        position: relative;
+        opacity: 0.3;
+        height: 100%;
+        width: 30%;
+        float: right;
+        margin: -2.5%;
+
+        
+    }
+    .titleguidingtools{
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 45px;
+        font-weight: 100;
+        font-family: 'Lobster', cursive;
+    
+    }
+    .titlesummer{
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 45px;
+        font-weight: 100;
+        font-family: 'Lobster', cursive;
+    
+    }
+    .disguidingtools{
+        float: left;
+        width: 65%;
+        font-size: 250%;
+        position: relative;
+        padding-top: 3%;
+        margin-top: 10%;
+        background-color: white;
+        opacity: 0.6;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        font-family: 'Caveat', cursive;
+        /* display: none; */
+
+    }
+    .dissummer{
+        float: left;
+        width: 65%;
+        font-size: 250%;
+        position: relative;
+        padding-top: 3%;
+        margin-top: 10%;
+        background-color: white;
+        opacity: 0.6;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        font-family: 'Caveat', cursive;
+        /* display: none; */
+    
+    }
+    .basket{
+        clear: left;
+        height: 70vh;  
+    }
+    .winter{
+        clear: left;
+        height: 70vh;
+    }
+    .img33{
+        position: relative;
+        opacity: 0.3;
+        height: 100%;
+        width: 30%;
+        float: left;
+        
+    }
+    .img3{
+        position: relative;
+        opacity: 0.3;
+        height: 100%;
+        width: 30%;
+        float: left;
+        
+    }
+    .titlebasket{
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-weight: 100;
+        font-family: 'Lobster', cursive;
+    }
+    .titlewinter{
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-weight: 100;
+        font-family: 'Lobster', cursive;
+    }
+    .disbasket{
+        float: right;
+    width: 65%;
+    font-size: 250%;
+    position: relative;
+    padding-top: 3%;
+    margin-top: 10%;
+    background-color: white;
+    opacity: 0.6;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-family: 'Caveat', cursive;
+    /* display: none; */
+    }
+    .diswinter{
+        float: right;
+    width: 65%;
+    font-size: 250%;
+    position: relative;
+    padding-top: 3%;
+    margin-top: 10%;
+    background-color: white;
+    opacity: 0.6;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-family: 'Caveat', cursive;
+    }
+    .footer1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25% ;
+        grid-gap: 0px;
+        border: none;
+        height: 25vh;
+        padding-top: 3%;
+        padding-left: 3%;
+background-image:linear-gradient(to bottom,rgb(62,54,55),#392E29) 
+
+
+    }
+   footer{
+    background-image:linear-gradient(to bottom,rgb(62,54,55),#392E29) 
+    /* background-image:linear-gradient(to bottom,rgb(99, 95, 95),rgb(62,54,55),#392E29,rgb(99, 95, 95),rgb(62,54,55),#392E29) */
+
+       ;
+        /* background-image: url(/img/tree.png); */
+        /* background-color: #392E29; */
+        /* background: rgb(0,0,0); */
+        /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(16,71,34,0.8015581232492998) 67%, rgba(14,86,58,0) 100%, rgba(0,212,255,1) 100%);        height: 25vh; */
+        color: wheat;
+        font-size: xx-large;
+        grid-template-columns: 100% ;
+        font-family: 'Times New Roman', Times, serif; 
+        /* border-top: 4px dotted rgb(61, 10, 12); */
+        border-style: groove;
+    }
+    .pfooter{
+
+        font-family: sans-serif;
+        /* padding-top: 5%;  */
+     line-height: 150%; 
+     padding-bottom: 3%;
+     padding-top: 5%;
+     font-family: 'Maven Pro', sans-serif;
+     font-size: x-large;
+    }
+    #upArrowe{
+        position: fixed ;
+        right: 2%;
+        bottom: 5% ;
+        background: transparent;
+        float: right;
+    }
