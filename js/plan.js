@@ -1,5 +1,63 @@
 'use strict';
 
+
+
+// mmmmmmmmmmmmmmmmmmmmmmSocial Media mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+document.getElementById('socialss').addEventListener("click", function() {
+	document.querySelector('.bg-social').style.display = "flex";
+});
+
+document.querySelector('.close4').addEventListener("click", function() {
+	document.querySelector('.bg-social').style.display = "none";
+});
+
+// mmmmmmmmmmmmmmmmmmmmmmTHE CELENDER mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+document.getElementById('ss-calender').addEventListener("click", function() {
+	document.querySelector('.bg-celender').style.display = "flex";
+});
+
+document.querySelector('.close2').addEventListener("click", function() {
+	document.querySelector('.bg-celender').style.display = "none";
+});
+// mmmmmmmmmmmmmmmmmmmmmmTHE CLOCK mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+document.getElementById('clocks').addEventListener("click", function() {
+	document.querySelector('.bg-clock').style.display = "flex";
+});
+
+document.querySelector('.close3').addEventListener("click", function() {
+	document.querySelector('.bg-clock').style.display = "none";
+});
+
+// mmmmmmmmmmmmmmmmmmmmmmTHE CLOCK mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+function showTime(){
+  var date =new Date();
+  var h=date.getHours();
+  var m=date.getMinutes();
+  var s=date.getSeconds();
+  var session="AM";
+if (h == 0){
+  h=12;
+}
+if (h>12){
+  h =h-12;
+  session="BM";
+}
+h =(h<10) ? "0" +h:h ;
+m =(m<10) ? "0" +m:m ;
+s =(s<10) ? "0" +s:s ;
+
+
+
+  var time = h + ":" +m +":"+s+" "+session;
+  document.getElementById("MyClockDisplay").innerText=time;
+  document.getElementById("MyClockDisplay").textContent=time;
+  setTimeout(showTime ,1000);
+}
+
+showTime();
+// mmmmmmmmmmmmmmmmmmmmmmTHE CLOCK mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
 var packagedLocations = [];// this array to save the proparty and vlaue
 var foodType = ['Breakfast Dish', 'Summer Dish', 'Winter Dish'];
 var equipmentType = ['uniform', 'uniform & guiding tools', 'uniform, guiding tools, and first-aid kit'];
@@ -228,7 +286,7 @@ formValues.addEventListener('submit', function (event) {
 });
 
 
-function PlanTrip(locationName, period, route, transportation, food, foodType, equipment, equipmentType) {
+function PlanTrip(locationName, period, route, transportation, food, equipment, foodType, equipmentType) {
 
     this.locationName = locationName;
     this.period = period;
@@ -237,8 +295,8 @@ function PlanTrip(locationName, period, route, transportation, food, foodType, e
     this.discription;
     this.transportation = transportation;
     this.food = food;
-    this.foodType = foodType;
     this.equipment = equipment;
+    this.foodType = foodType;
     this.equipmentType = equipmentType;
     for (var i = 0; i < packagedLocations.length; i++) {
         if (this.route === packagedLocations[i].routes) {
@@ -270,7 +328,7 @@ function renderPlan() {
     canvas.appendChild(h2El);
 
     var h5El = document.createElement('h5');
-    h5El.textContent = `Chosen route:  your trip will be ${loadplanLocations[loadplanLocations.length -1].distance} starting at ${loadplanLocations[loadplanLocations.length -1].locationName} and finished at ${loadplanLocations[loadplanLocations.length -1].route}`
+    h5El.textContent = `Your trip will be ${loadplanLocations[loadplanLocations.length -1].distance} starting at ${loadplanLocations[loadplanLocations.length -1].locationName} and finished at ${loadplanLocations[loadplanLocations.length -1].route}`
     canvas.appendChild(h5El);
 
 
@@ -323,14 +381,14 @@ function renderPlan() {
 
 }
 
-var x = document.getElementById("container1");
-var y = document.getElementById("section-left");
+var x = document.getElementById("gridDiv");
+var y = document.getElementById("gridDiv2");
 var z = document.getElementById('right')
 var w = document.getElementById('section-right')
 
 function myFunction() {
     if (x.style.display === "none") {
-      x.style.display = "block";
+      x.style.display = "grid";
       z.style.display = 'block';
       y.style.display = "none";
       w.style.display = 'none';
@@ -345,7 +403,7 @@ function myFunction() {
 
   function myFunction2() {
     if (y.style.display === "none") {
-      y.style.display = "block";
+      y.style.display = "grid";
       w.style.display = 'block';
       x.style.display = "none";
       z.style.display = 'none';
@@ -360,3 +418,4 @@ function myFunction() {
 
     }
   }
+

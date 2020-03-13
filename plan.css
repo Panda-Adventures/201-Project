@@ -1,257 +1,177 @@
 html{
-    background-color: #221b15;
     scroll-behavior: smooth;
+    outline: 0;
+    background-color: black;
 }
 
 header{
-    background-image: url('img/header3.jpg');
-    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(../img/head11.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
     background-attachment: fixed;
-
-}
-
-ul{
-    padding-left: 65%;
-    padding-top: 45%;
-}
-
-li:nth-child(1){
-    padding-right: 20%;
-}
-
-#button-1{
-    
-    box-shadow: 1px 2px 3px -1px black;
-    background-color: transparent;
-    background-color: #b7bbc705;
-    border-radius: 28px;
-    border: 0;
-    display: inline-block;
-    cursor: pointer;
-    color: #bfac9e;
-    font-family: Courier New;
-    font-size: 125%;
-    font-weight: bold;
-    padding: 16px 40px;
-    text-decoration: none;
-    transition: all 0.8s ease;
-    background-color: #61091e;
-}
-
-#button-2{
-    
-    box-shadow: 1px 2px 3px -1px black;
-    background-color: transparent;
-    background-color: #b7bbc705;
-    border-radius: 28px;
-    border: 0;
-    display: inline-block;
-    cursor: pointer;
-    color: #bfac9e;
-    font-family: Courier New;
-    font-size: 125%;
-    font-weight: bold;
-    padding: 16px 40px;
-    text-decoration: none;
-    transition: all 0.8s ease;
-    background-color: #61091e;
-}
-
-#button-2:hover {
-    background-color:transparent;
-    background-color: #a10026;
-    color: #ffffff;
-    transform: scale(1.1);
-}
-#button-2:active {
-    transform: translate(0px, 5px);
-}
-
-#button-1:hover {
-    background-color:transparent;
-    background-color: #a10026;
-    color: #ffffff;
-    transform: scale(1.1);
-}
-#button-1:active {
-    transform: translate(0px, 5px);
-}
-
-
-li{
-    display: inline-block;
 }
 
 main{
-    background-color: #221b15;
+    padding-top: 5%;
+}
+
+#gridDiv{
+    display: grid;
+    display: none;
+    grid-template-columns: 40% 40%;
+    grid-template-areas: 'form render';
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(img/head6.jpg);
+    height: 130vh;
+}
+#gridDiv2{
+    display: grid;
+    display: none;
+    grid-template-columns: 40% 40%;
+    grid-template-areas: 'form render';
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(img/head6.jpg);
     height: 100vh;
-
+    padding-top: 10%;
 }
 
-.formh2{
-    padding-bottom: 7%;
-    font-size: 210%;
+#container1{
+    grid-area: form;
 }
 
-form{
-    box-shadow: 1px 1px 11px #61091e;
-}
+#container1 .form-style-5, #section-left .form-style-5{
 
-.form-style-5{
-	margin-left: 5%;
-	padding: 20px;
 	background: #f4f7f8;
 	border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
     transition: all 0.5s ease;
-    width: 37%;
-    float: left;
-    margin-top: -2.5%;
+    box-shadow: 15px 10px 25px black;
 }
-.form-style-5 fieldset{
+
+#container1 .form-style-5 fieldset, #section-left .form-style-5 fieldset{
 	border: none;
 }
-.form-style-5 legend {
-	font-size: 1.4em;
-	margin-bottom: 10px;
-}
-.form-style-5 label {
+
+#container1 .form-style-5 label, #section-left .form-style-5 label {
 	display: block;
     margin-bottom: 3%;
-    font-size: 150%;
+    font-size: 125%;
+    margin-left: 3%;
+    width: 80%;
+    color: rgb(73, 73, 73);
+
 }
 
-.form-style-5 select {
+#container1 .form-style-5 select, #section-left .form-style-5 select {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	background: rgba(255,255,255,.1);
 	border: none;
-	border-radius: 4px;
-	font-size: 15px;
-	margin: 0;
+	font-size: 100%;
 	outline: 0;
-	padding: 10px;
-	width: 100%;
-	box-sizing: border-box; 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
+	padding: 1.5%;
+    width: 90%;
+    margin-left: 5%;
 	background-color: #e8eeef;
-	color:#754355;
+	color:#00b7b3;
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-    vertical-align: center;
+    margin-bottom: 4%;
+    border-radius: 7px;
 }
 
-.form-style-5 select:focus{
+#container1 .form-style-5 select:focus, #section-left .form-style-5 select:focus{
     background: #dde6eb;
-    border: 5px solid #61091e;
-    border-radius: 10px;
+    border: 3px solid #00b7b438;
 }
 
-.form-style-5 select:hover{
-	background: #d2d9dd;
+#container1 .form-style-5 select:hover, #section-left .form-style-5 select:hover{
+	background: #00b7b41a;
 }
 
-.form-style-5 .number {
-	background: #61091e;
-    color: #fff;
+#container1 .form-style-5 .number, #section-left .form-style-5 .number {
+	background: #00b7b3;
+    color: white;
     height: 3vh;
-    width: 4%;
+    width: 5%;
     display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 32px;
+    font-size: 80%;
+    margin-right: 1%;
+    line-height: 200%;
     text-align: center;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 48% 48% 48% 0px;
 }
 
-.form-style-5 input[type="submit"]
-{
-	position: relative;
-	display: block;
+#container1 .form-style-5 input[type="submit"], #section-left .form-style-5 input[type='submit']{
 	padding: 19px 39px 18px 39px;
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
-    margin-bottom: 10px;
-    box-shadow: 1px 2px 3px -1px black;
-    background-color: transparent;
-    background-color: #b7bbc705;
+	width: 80%;
+    margin-bottom: 4%;
     border-radius: 28px;
     border: 0;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Courier New;
-    font-size: 19px;
+    font-size: 130%;
     font-weight: bold;
     padding: 14px 34px;
     text-decoration: none;
     transition: all 0.8s ease;
-    background-color: #61091e;
+    background-color: #00b7b3;
+    margin-left: 10%;
+    margin-top: 2%;
+    outline: 0;
+
 }
-.form-style-5 input[type="submit"]:hover
-{
-	background-color:transparent;
-    background-color: #a10026;
+
+#container1 .form-style-5 input[type="submit"]:hover, #section-left .form-style-5 input[type='submit']:hover{
+    background-color: #00e0dd;
     color: #ffffff;
     transform: scale(1.05);
 }
 
-#render{
-    width: 91%;
-}
-
-#right{
-    float: right;
-    width: 50%;
-    color: wheat;
+#container1 h2, #section-left h2{
+    font-size: 200%;
+    margin-left: 4%;
+    color: rgb(73, 73, 73);
     padding-top: 5%;
-    display: block;
 }
 
 
-#render h2{
-    font-size: 230%;
-    padding-bottom: 5%;
+#right, #section-right{
+    grid-area: render;
+    background-color: #00b7b30a;
+    padding: 100px;
+    border-radius: 50px;
+    text-shadow: 0.1px 0.1px 0.2px black;
 }
 
-#render h5{
-    font-size: 130%;
-    line-height: 160%;
+
+#right h2, #section-right h2{
+    font-size: 200%;
+    margin-left: 4%;
+    color: black;
 }
 
-#render h6{
-    font-size: 130%;
-    line-height: 160%;
+#right h5, h6, #section-right h5, h6{
+    font-size: 150%;
+    margin-left: 5%;
+    color: black;
+    line-height: 150%;
+    width: 100%;
+    margin-bottom: 2%;
 }
 
-#container1{
-    background-color: rgba(255, 241, 241, 0.15);
-    height: 80vh;
-    margin-top: 12%;
-    display: none;
-    box-shadow: 1px 1px 11px #61091e;
-    animation: slide .6s ease 1;
-
-}
-
-h2:nth-child(2){
-    font-size: 230%;
-    padding-bottom: 5%;
-}
 
 #section-left{
-    background-color: rgba(255, 241, 241, 0.15);
-    height: 50vh;
-    margin-top: 5%;
-    display: none;
-    box-shadow: 1px 1px 11px #61091e;
-    animation: slide .6s ease 1;
+    grid-area: form;
+}
 
+#section-right{
+    grid-area: render;
 }
 
 @keyframes slide{
@@ -303,31 +223,431 @@ h2:nth-child(2){
     }
 }
 
-#section-left .form-style-5{
-    margin-top: -1.5%;
+
+button{
+    box-shadow: 1px 2px 3px -1px black;
+    background-color:transparent;
+    background-color: #b7bbc705;
+    border-radius:28px;
+    border: 0;
+    outline: 0;
+	display:inline-block;
+	cursor:pointer;
+    color: #00b7b3;
+	font-family:Courier New;
+	font-size:19px;
+	font-weight:bold;
+	padding:14px 34px;
+    text-decoration:none;
+    transition: all 0.8s ease;
 
 }
 
-#section-right{
-    width: 91%;
-    color: wheat;
-    padding-top: 5%;
+.myButton:hover {
+    background-color:transparent;
+    background-color: rgb(0,183,179);
+    color: white;
+    transform: scale(1.1);
 }
-
-#info{
-    width: 50%;
-    padding-top: 9%;
-    float: right;
+.myButton:active {
+	position:relative;
+	top:1px;
 }
-
-
-#info h2{
+li{
+    display: inline-block;
+    margin: 3% 2%;
     font-size: 150%;
+}
+
+
+ul{
+    margin-left: 48%;
+    padding-top: 2%;
+}
+
+
+.bg-celender h2{
+    font-size: 421%;
     padding-bottom: 5%;
+    padding-top: 3%;
+    color: white;
 }
 
-#info h3{
-    font-size: 110%;
-    line-height: 120%;
+
+
+header h3{
+    width: 30%;
+    font-size: xx-large;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    box-sizing: content-box;
 }
 
+header span{
+    color: #00b7b3;
+    font-weight: bold;
+    box-sizing: content-box;
+
+}
+
+header h4{
+    width: 10%;
+    font-size: large;
+    color: #00b7b3;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 1%;
+    box-sizing: content-box;
+
+}
+
+.fadetext{
+    opacity: 0;
+    animation: fadetext 26s linear infinite;
+    animation-delay: 2s;
+}
+
+.fadeqoute{
+    opacity: 0;
+    animation: fadetext 26s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadetext{
+    0%{
+        opacity: 0;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 3%;
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 6%;
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 9%;
+    }
+    100%{
+        opacity: 0;
+        padding-left: 11%;
+    }
+}
+
+
+.fadetext2{
+    opacity: 0;
+    animation: fadetext2 26s linear infinite;
+    animation-delay: 8s;
+    padding-left: 70%;
+    width: 33%;
+}
+
+.fadeqoute2{
+    opacity: 0;
+    animation: fadeqoute2 26s linear infinite;
+    animation-delay: 8.5s;
+    padding-left: 70%;
+}
+
+@keyframes fadetext2{
+    0%{
+        opacity: 0;
+        padding-left: 55%;
+        padding-top: 11%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 60%;
+        padding-top: 11%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 65%;
+        padding-top: 11%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 70%;
+        padding-top: 11%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 75%;
+        padding-top: 11%;
+    }
+}
+@keyframes fadeqoute2{
+    0%{
+        opacity: 0;
+        padding-left: 55%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 60%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 65%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 70%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 75%;
+        padding-top: 1%;
+    }
+}
+
+.fadetext3{
+    opacity: 0;
+    animation: fadetext3 26s linear infinite;
+    animation-delay: 14s;
+    padding-left: 4%;
+    width: 33%;
+}
+
+.fadeqoute3{
+    opacity: 0;
+    animation: fadeqoute3 26s linear infinite;
+    animation-delay: 14.5s;
+    padding-left: 4%;
+}
+
+@keyframes fadetext3{
+    0%{
+        opacity: 0;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 6%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 8%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+    }
+}
+@keyframes fadeqoute3{
+    0%{
+        opacity: 0;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 6%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 8%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 9%;
+        padding-top: 1%;
+    }
+}
+
+.fadetext4{
+    opacity: 0;
+    animation: fadetext4 26s linear infinite;
+    animation-delay: 20s;
+    padding-left: 47%;
+    width: 33%;
+}
+
+.fadeqoute4{
+    opacity: 0;
+    animation: fadeqoute4 26s linear infinite;
+    animation-delay: 20.5s;
+    padding-left: 49%;
+}
+
+@keyframes fadetext4{
+    0%{
+        opacity: 0;
+        padding-left: 47%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 53%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 59%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 65%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 65%;
+        padding-top: 1%;
+    }
+}
+@keyframes fadeqoute4{
+    0%{
+        opacity: 0;
+        padding-left: 48%;
+        padding-top: 1%;
+    }
+
+    5.8%{
+        opacity: 0.4;
+        padding-left: 54%;
+        padding-top: 1%;
+
+    }
+
+    11.5%{
+        opacity: .8;
+        padding-left: 60%;
+        padding-top: 1%;
+
+    }
+
+    17.2%{
+        opacity: 0;
+        padding-left: 66%;
+        padding-top: 1%;
+
+    }
+    100%{
+        opacity: 0;
+        padding-left: 66%;
+        padding-top: 1%;
+    }
+}
+/**********************************************************-----------------------------
+--------------------------------------------------
+--------------------------THE CSS FOR SOCIAL ICON----------------------------------
+------------------------------------------------------------
+--------------------------------------------------------------*/
+.social1{
+    background-color: rgb(214,214,214);
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 100hv;
+}
+.btn{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin: 20px;
+    background:rgb(214,214,214);
+    border-radius: 50%;
+    box-shadow: -9px -9px 20px 0 rgb(255,255,255,0.9),
+    7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+
+
+}
+
+.btn::before{
+content: "";
+position: absolute;
+height: 80%;
+width: 80%;
+background:rgb(214,214,214);
+border-radius: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+transition: 0.2s;
+
+}
+.btn:hover::before{
+    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.btn:hover i {
+    font-size: 30px;
+  }
+.btn:hover{
+    transform: scale(1.1);
+}
+.btn i {
+    position: absolute;
+    color: #07BCBC;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+  }
+
+  /**********************************************************-----------------------------
+--------------------------------------------------
+--------------------------THE END of CSS FOR SOCIAL ICON----------------------------------
