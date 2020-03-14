@@ -16,13 +16,14 @@ footer{
   width: 100%;
   z-index: 9999;
   background-color: #b4ddf0;
+  background-color: #0D2B36;;
   overflow-x: hidden;
 }
 
 .bg{
     overflow:hidden;
       background:#b4ddf0;
-      /* background-image: url('img/fog2.jpg'); */
+      background-color: #0D2B36;;
       position: absolute;
       top:0;
       left:0;
@@ -30,12 +31,23 @@ footer{
       bottom:0;
       grid-area: ft;
 }
+
 .mountain, .mountain-two, .mountain-three {
   position: absolute;
   bottom: 0;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
   border-bottom: 180px solid #7ac1e4;
+  z-index: 1;
+
+}
+
+.mountain, .mountain-two, .mountain-three {
+  position: absolute;
+  bottom: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 180px solid #6A6F83;
   z-index: 1;
 }
 .mountain-two { 
@@ -301,11 +313,18 @@ top: -10px;
                font-size: 200%;
                font-weight: bold;
                border: 10px solid white;
-               padding: 2%;
+               padding: 0 6%;
              }
 
+             #address h2, #support h2 {
+              font-size: 45px;
+              font-weight: bold;
+              border: 0;
+              padding: 0 6%;
+          }
+
              #address h2:hover, #support h2:hover{
-              font-size: 200%;
+              font-size: 50px;
               font-weight: bold;
               border: 10px solid white;
               background-color: white;

@@ -111,19 +111,21 @@ main{
 }
 
 .blog-card .details .author:before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   margin-right: 10px;
   content: "\f007";
+  padding: 0 8px;
 }
 
 .blog-card .details .date:before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   margin-right: 10px;
   content: "\f133";
+  padding: 0 8px;
 }
 
 .blog-card .details .tags ul:before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   content: "\f02b";
   margin-right: 10px;
 }
@@ -174,7 +176,7 @@ main{
 
 .blog-card .description .read-more a:after {
   content: "\f061";
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   margin-left: -10px;
   opacity: 0;
   vertical-align: middle;

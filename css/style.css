@@ -91,6 +91,14 @@ p{
     vertical-align: baseline;
 }
 
+.para {
+    font-size: 40px;
+   line-height: 1.7;
+ padding: 13px 0;
+     color: #9599a5;
+     vertical-align: baseline;
+ }
+
 .breaker{
     height: 15vh;
     background-color: #242626;

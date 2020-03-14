@@ -1,240 +1,12 @@
-html{
-    scroll-behavior: smooth;
-    outline: 0;
-    background-color: black;
-}
-
 header{
+    background-image: url('img/head1.jpg');
+    height: 100vh;
+    z-index: 9999;
     overflow-x: hidden;
-    background-image: url(img/head11.jpg);
-    background-repeat: no-repeat;
+    overflow-y: hidden;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
-
-main{
-    padding-top: 5%;
-}
-
-#gridDiv{
-    display: grid;
-    display: none;
-    grid-template-columns: 40% 40%;
-    grid-template-areas: 'form render';
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url(img/head6.jpg);
-    height: 130vh;
-}
-#gridDiv2{
-    display: grid;
-    display: none;
-    grid-template-columns: 40% 40%;
-    grid-template-areas: 'form render';
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url(img/head6.jpg);
-    height: 100vh;
-    padding-top: 10%;
-}
-
-#container1{
-    grid-area: form;
-}
-
-#container1 .form-style-5, #section-left .form-style-5{
-
-	background: #f4f7f8;
-	border-radius: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    transition: all 0.5s ease;
-    box-shadow: 15px 10px 25px black;
-}
-
-#container1 .form-style-5 fieldset, #section-left .form-style-5 fieldset{
-	border: none;
-}
-
-#container1 .form-style-5 label, #section-left .form-style-5 label {
-	display: block;
-    margin-bottom: 3%;
-    margin-left: 3%;
-    width: 80%;
-    color: rgb(73, 73, 73);
-    margin-top: 12px;
-    font-size: 20px;
-    font-family: sans-serif;
-
-}
-
-#container1 .form-style-5 select, #section-left .form-style-5 select {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	border: none;
-	font-size: 100%;
-	outline: 0;
-	padding: 1.5%;
-    width: 90%;
-    margin-left: 5%;
-	background-color: #e8eeef;
-	color:#00b7b3;
-	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 3%;
-    border-radius: 7px;
-    height: 41px;
-}
-
-#container1 .form-style-5 select:focus, #section-left .form-style-5 select:focus{
-    background: #dde6eb;
-    border: 3px solid #00b7b438;
-}
-
-#container1 .form-style-5 select:hover, #section-left .form-style-5 select:hover{
-	background: #00b7b41a;
-}
-
-#container1 .form-style-5 .number, #section-left .form-style-5 .number {
-	background: #00b7b3;
-    color: white;
-    height: 3vh;
-    width: 5%;
-    display: inline-block;
-    font-size: 80%;
-    margin-right: 1%;
-    line-height: 200%;
-    text-align: center;
-    border-radius: 48% 48% 48% 0px;
-}
-
-#container1 .form-style-5 input[type="submit"], #section-left .form-style-5 input[type='submit']{
-	padding: 19px 39px 18px 39px;
-	width: 80%;
-    margin-bottom: 4%;
-    border-radius: 28px;
-    border: 0;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Courier New;
-    font-size: 130%;
-    font-weight: bold;
-    padding: 14px 34px;
-    text-decoration: none;
-    transition: all 0.8s ease;
-    background-color: #00b7b3;
-    margin-left: 10%;
-    margin-top: 2%;
-    outline: 0;
-
-}
-
-#container1 .form-style-5 input[type="submit"]:hover, #section-left .form-style-5 input[type='submit']:hover{
-    background-color: #00e0dd;
-    color: #ffffff;
-    transform: scale(1.05);
-}
-
-#container1 h2, #section-left h2{
-    font-size: 200%;
-    margin-left: 4%;
-    color: rgb(73, 73, 73);
-    padding-top: 5%;
-}
-
-
-#right, #section-right{
-    grid-area: render;
-    background-color: #00b7b30a;
-    padding: 100px;
-    border-radius: 50px;
-    text-shadow: 0.1px 0.1px 0.2px black;
-}
-
-
-#right h2, #section-right h2{
-    font-size: 200%;
-    margin-left: 4%;
-    color: black;
-    margin-bottom: 24px;
-    margin-left: 0%;
-}
-
-#right h5, h6, #section-right h5, h6{
-    font-size: 16px;
-    margin-left: 5%;
-    color: black;
-    line-height: 1.8;
-    width: 100%;
-    margin-bottom: 2%;
-}
-
-
-#section-left{
-    grid-area: form;
-}
-
-#section-right{
-    grid-area: render;
-}
-
-div #info h3 {
-    margin-bottom: 14px;
-    line-height: 1.2;
-    font-size: 16px;
-    font-weight: 200;
-}
-
-@keyframes slide{
-    0%{
-        width: 0;
-        opacity: 0;
-    }
-
-    10%{
-        width: 10%;
-        opacity: 0.1;
-    }
-
-    20%{
-        width: 20%;
-        opacity: 0.2;
-    }
-    30%{
-        width: 30%;
-        opacity: 0.3;
-    }
-    40%{
-        width: 40%;
-        opacity: 0.4;
-    }
-    50%{
-        width: 50%;
-        opacity: 0.5;
-    }
-    60%{
-        width: 60%;
-        opacity: 0.6;
-    }
-    70%{
-        width: 70%;
-        opacity: 0.7;
-    }
-    80%{
-        width: 80%;
-        opacity: 0.8;
-    }
-    90%{
-        width: 90%;
-        opacity: 0.9;
-    }
-    100%{
-        width: 100%;
-        opacity: 1;
-    }
-}
-
 
 button{
     box-shadow: 1px 2px 3px -1px black;
@@ -273,7 +45,7 @@ li{
 
 
 ul{
-    margin-left: 48%;
+    margin-left: 78%;
     padding-top: 2%;
 }
 
@@ -662,4 +434,111 @@ transition: 0.2s;
 
   /**********************************************************-----------------------------
 --------------------------------------------------
---------------------------THE END of CSS FOR SOCIAL ICON----------------------------------
+--------------------------THE END of CSS FOR SOCIAL ICON----------------------------------****************/
+
+main {
+    background-color: #100e17;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .container {
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+  }
+  
+  .card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 60px);
+  }
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #17141d;
+    stroke-width: 2px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+
+
