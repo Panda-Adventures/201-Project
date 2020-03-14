@@ -29,7 +29,6 @@ button{
 	padding:14px 34px;
     text-decoration:none;
     transition: all 0.8s ease;
-
 }
 
 .myButton:hover {
@@ -83,6 +82,15 @@ p{
     line-height: 136%;
 }
 
+.para{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 .breaker{
     height: 15vh;
     background-color: #242626;
@@ -101,10 +109,10 @@ p{
     background-color: #242626;
 }
 
-.container{
+/* .container{
     text-align: center;
     color: white;
-}
+} */
 
 .col1{
     width: 50%;
@@ -169,7 +177,7 @@ img:hover{
     cursor: pointer;
 } */
 
-.mySlides .mySlides2 {
+/* .mySlides .mySlides2 {
   display: none;
 }
 
@@ -209,7 +217,7 @@ img:hover{
 @keyframes fade {
   from {opacity: .1}
   to {opacity: 1}
-}
+} */
 
 #hikealong{
     background: teal;
@@ -392,11 +400,14 @@ h3{
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+    box-sizing: content-box;
 }
 
 span{
     color: #00b7b3;
     font-weight: bold;
+    box-sizing: content-box;
+
 }
 
 h4{
@@ -409,6 +420,8 @@ h4{
     font-style: italic;
     font-weight: bold;
     padding-top: 1%;
+    box-sizing: content-box;
+
 }
 
 .fadetext{
