@@ -11,6 +11,13 @@ header{
   
 }
 
+#pLogo{
+  position: absolute;
+  top: -7px;
+  width: 9%;
+  left: 4%;
+}
+
 .body {
     background-color: #100e17;
     font-family: 'Open Sans', sans-serif;
