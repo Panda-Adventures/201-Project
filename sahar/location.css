@@ -4,7 +4,7 @@ html{
 
 header{
     overflow-x: hidden;
-    background-image: url(img/header7.jpg);
+    background-image: url(../img/header7.jpg);
     background-size: cover;
     background-position: center;
     height: 80vh;
