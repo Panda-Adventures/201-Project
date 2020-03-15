@@ -156,14 +156,11 @@ margin-top: 6.%;
   
 }
 .dates{
-
-
   width: 500px;
   height:550px;
   background-color:white;
   position: relative;
   border-radius: 10px 0 0 10px;
-
 }
 .time{
   width: 378px;
@@ -173,15 +170,13 @@ margin-top: 6.%;
   padding-bottom: 40px;
   
 }
-.week ul{
+.week p{
 float: left;
 font-size: small;
 }
 .span{
   float: left;
-  font-size: 40px;
-}
-
+  font-size: 15px;}
 .time h2{
   float: left;
   margin: 0px;
@@ -190,9 +185,8 @@ font-size: small;
   font-weight: 600;
 }
 .week{
-
   margin: 0px auto;
-  font-size: 20px;
+  font-size: 15px;
   display: block;
   width: 380px;
   height: 40px;
@@ -201,15 +195,17 @@ font-size: small;
   border-bottom: 4px solid linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
   
 }
-
 .week ul{
   list-style: none;
   margin: 0px ;
   padding: 0px ;
  
-
-
-
+}
+.week li:last-child{
+  z-index: 9999999;
+top: 10%;
+;
+position: absolute;
 }
 .week li{
   float: left;
@@ -218,18 +214,37 @@ font-size: small;
   line-height: 40px;
   text-align: center;
   padding: 0px 4px;
-
  
  
 }
+/* .week p{
+  list-style: none;
+  margin: 0px ;
+  padding: 0px ;
+  color: black;
+  
+  line-height: 40px;
+  text-align: center;
+  padding: 0px 4px;
+display: inline-block;
+}
+/* .week p{
+  float: left;
+  width: 40px;
+  height: 40px;
+  color: black;
+  line-height: 40px;
+  text-align: center;
+  padding: 0px 4px;
+ 
+ 
+} */ */
 .day{
   margin: 0px auto;
   display: inline-block;
+ 
   
-  
-
 }
-
 .day ul{
   margin: 0px auto;
   list-style: none;
@@ -240,8 +255,8 @@ font-size: small;
 .day li{
   float: left;
   width: 50px;
-  height: 50px;
-  list-style: none;
+  height: 30px;
+  /* list-style: none; */
   margin-top: 4px;
   
  
@@ -249,20 +264,18 @@ font-size: small;
 .day li:hover {
 background:rgb(223, 7, 72);
 color: white;
-border-radius:50%;
-
+border-radius:100%;
 box-sizing: border-box;
-transform: scale(0.9);
+transform: scale(1.0);
 text-align: center;
-margin-left: -20px;
-margin-top: -10px;
+/* margin-left: -20px;
+margin-top: -10px; */
 /*we use margin here to control the background position 
 and use the padding to controll number posion inside this circle background*/
 cursor: pointer;
 overflow: hidden;
 padding: 10px 5px;
 }
-
 .week hr{
   
       height: 5px;
@@ -272,7 +285,6 @@ padding: 10px 5px;
   
 }
 .current-date{
-
   width: 370px;
   display: block;
   margin: 0px auto;
@@ -281,7 +293,6 @@ padding: 10px 5px;
   font-weight: 400;
   padding-top: 50px;
   
-
 }
 .event{
 position: absolute;
@@ -291,8 +302,8 @@ opacity: .9;
 border: 40px solid white;
   color: white;
   overflow: hidden;
-  height: 470px;
-  width: 360px;
+  height: 550px;
+  width: 440px;
   border-radius: 0px 15px 15px 0px;
   
   background-image: linear-gradient(to right, #07BCBC , rgb(247, 224, 224));
@@ -300,13 +311,12 @@ border: 40px solid white;
 .notee input{
  position: absolute;
 width:360px ;
-height: 464px;
+height: 469px;
 font-family: 'Caveat', cursive;
 text-align: center;
 font-size: 30px;
 background-image:linear-gradient(to right, rgb(7, 188, 188) , rgb(247, 224, 224));
 }
-
 .bg-celender {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -322,9 +332,6 @@ background-image:linear-gradient(to right, rgb(7, 188, 188) , rgb(247, 224, 224)
   align-items: center;
   
 }
-
-
-
 .close2 {
   position: absolute;
   top: -4px;
@@ -338,7 +345,6 @@ background-image:linear-gradient(to right, rgb(7, 188, 188) , rgb(247, 224, 224)
   
       color: rgb(10, 10, 10);
   }
-
 
 :root {
         font-size: 16px;
